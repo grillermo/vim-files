@@ -40,3 +40,6 @@
 [submodule "bundle/quickfix-reflector.vim"]
 	path = bundle/quickfix-reflector.vim
 	url = https://github.com/stefandtw/quickfix-reflector.vim.git
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
