@@ -31,3 +31,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/neomru.vim"]
+	path = bundle/neomru.vim
+	url = https://github.com/Shougo/neomru.vim.git
