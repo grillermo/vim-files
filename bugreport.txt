@@ -1,0 +1,3158 @@
+uame -a
+Darwin MacBook-Pro-de-Guillermo.local 12.2.0 Darwin Kernel Version 12.2.0: Sat Aug 25 00:48:52 PDT 2012; root:xnu-2050.18.24~1/RELEASE_X86_64 x86_64
+
+
+
+VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Sep  1 2012 18:08:47)
+MacOS X (unix) version
+Included patches: 1-646
+Compiled by Bjorn Winckler <bjorn.winckler@gmail.com>
+Huge version with MacVim GUI.  Features included (+) or not (-):
++arabic +autocmd +balloon_eval +browse ++builtin_terms +byte_offset +cindent +clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments +conceal +cryptv +cscope +cursorbind +cursorshape +dialog_con_gui +diff +digraphs
+ +dnd -ebcdic +emacs_tags +eval +ex_extra +extra_search +farsi +file_in_path +find_in_path +float +folding -footer +fork() +fullscreen -gettext -hangul_input +iconv +insert_expand +jumplist +keymap +langmap +libcall +linebreak 
++lispindent +listcmds +localmap -lua +menu +mksession +modify_fname +mouse +mouseshape +mouse_dec -mouse_gpm -mouse_jsbterm +mouse_netterm -mouse_sysmouse +mouse_xterm +mouse_urxvt +mouse_sgr +multi_byte +multi_lang -mzscheme 
++netbeans_intg +odbeditor +path_extra +perl +persistent_undo +postscript +printer +profile +python -python3 +quickfix +reltime +rightleft +ruby +scrollbind +signs +smartindent -sniff +startuptime +statusline -sun_workshop +syntax 
++tag_binary +tag_old_static -tag_any_white -tcl +terminfo +termresponse +textobjects +title +toolbar +transparency +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo +vreplace +wildignore +wildmenu +windows 
++writebackup -X11 -xfontset +xim -xsmp -xterm_clipboard -xterm_save 
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+      user exrc file: "$HOME/.exrc"
+  system gvimrc file: "$VIM/gvimrc"
+    user gvimrc file: "$HOME/.gvimrc"
+    system menu file: "$VIMRUNTIME/menu.vim"
+  fall-back for $VIM: "/Applications/MacVim.app/Contents/Resources/vim"
+Compilation: clang -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_MACVIM -Wall -Wno-unknown-pragmas -pipe  -DMACOS_X_UNIX -no-cpp-precomp  -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: clang   -L.    -L.         -L/usr/local/lib -o Vim -framework Cocoa -framework Carbon      -lncurses  -liconv -framework Cocoa    -fstack-protector -L/usr/local/lib  -L/System/Library/Perl/5.12/darwin-thread-multi-2level/CORE -lperl -lm -lutil -lc -framework Python   -framework Ruby   
+
+E81: Using <SID> not in a script context
+
+E121: Undefined variable: a:n
+E116: Invalid arguments for function isdirectory(a:n)
+E15: Invalid expression: isdirectory(a:n)
+
+E121: Undefined variable: a:n
+E15: Invalid expression: 'directory "' . a:n . '" exists'
+
+E581: :else without :if
+
+E121: Undefined variable: a:n
+E15: Invalid expression: 'directory "' . a:n . '" does NOT exist'
+
+E580: :endif without :if
+
+E193: :endfunction not inside a function
+
+E81: Using <SID> not in a script context
+
+E121: Undefined variable: a:n
+E116: Invalid arguments for function filereadable(a:n)
+E15: Invalid expression: filereadable(a:n)
+
+E121: Undefined variable: a:n
+E15: Invalid expression: '"' . a:n . '" is readable'
+
+E581: :else without :if
+
+E121: Undefined variable: a:n
+E15: Invalid expression: '"' . a:n . '" is NOT readable'
+
+E580: :endif without :if
+
+E193: :endfunction not inside a function
+
+--- Directories and Files ---
+
+$VIM = "/Applications/MacVim.app/Contents/Resources/vim"
+
+E81: Using <SID> not in a script context
+
+$VIMRUNTIME = "/home/grillermo/.vim"
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+E81: Using <SID> not in a script context
+
+--- Scripts sourced ---
+
+  1: /Applications/MacVim.app/Contents/Resources/vim/vimrc
+  2: ~/.vim/plugin/Rename.vim
+  3: ~/.vim/plugin/XMLFolding.vim
+  4: ~/.vim/plugin/autoclose.vim
+  5: ~/.vim/plugin/bclose.vim
+  6: ~/.vim/plugin/getscriptPlugin.vim
+  7: ~/.vim/plugin/grep.vim
+  8: ~/.vim/plugin/hexHighlight.vim
+  9: ~/.vim/plugin/jsbeautify.vim
+ 10: ~/.vim/plugin/locateopen.vim
+ 11: ~/.vim/plugin/matchparen.vim
+ 12: ~/.vim/plugin/mswin.vim
+ 13: ~/.vim/autoload/paste.vim
+ 14: ~/.vim/plugin/repeat.vim
+ 15: ~/.vim/plugin/session.vim
+ 16: ~/.vim/autoload/xolox/misc/os.vim
+ 17: ~/.vim/autoload/xolox/misc/msg.vim
+ 18: ~/.vim/plugin/spellfile.vim
+ 19: ~/.vim/plugin/tohtml.vim
+ 20: ~/.vim/plugin/vimballPlugin.vim
+ 21: ~/.vim/menu.vim
+ 22: /Applications/MacVim.app/Contents/Resources/vim/gvimrc
+ 23: ~/.vim/syntax/syntax.vim
+ 24: ~/.vim/syntax/synload.vim
+ 25: ~/.vim/syntax/syncolor.vim
+ 26: ~/.vim/filetype.vim
+ 27: ~/.gvimrc
+ 28: ~/.vim/syntax/nosyntax.vim
+ 29: ~/.vim/colors/badwolf.vim
+ 30: ~/.vim/bundle/vundle/autoload/vundle.vim
+ 31: ~/.vim/bundle/vundle/autoload/vundle/config.vim
+ 32: ~/.vim/autoload/xolox/session.vim
+
+E580: :endif without :if
+
+--- Options ---
+  aleph=224           cdpath=,,           cursorcolumn        foldcolumn=0      nohkmapp              linespace=0         numberwidth=4       rulerformat=        smartindent       noterse               warn
+  antialias           cedit=^F          nocursorline          foldenable          hlsearch          nolisp                operatorfunc=       scroll=36         nosmarttab            textauto          noweirdinvert
+noarabic              charconvert=        debug=              foldexpr=0          icon              nolist              nopaste             noscrollbind          softtabstop=0     notextmode            wildchar=<Tab>
+  arabicshape       nocindent           nodelcombine          foldignore=#        iconstring=         listchars=eol:$     pastetoggle=        scrolljump=1      nospell               textwidth=0         wildcharm=0
+noallowrevins         cinoptions=         dictionary=         foldlevel=1         ignorecase          loadplugins         patchexpr=          scrolloff=7         spellfile=          thesaurus=          wildignore=
+noaltkeymap           clipboard=        nodiff                foldlevelstart=-1 noimcmdline         nomacmeta             patchmode=        nosecure              spelllang=en      notildeop           nowildignorecase
+  ambiwidth=single    cmdheight=2         diffexpr=           foldmethod=syntax   imdisable           magic             nopreserveindent      selectmode=         spellsuggest=best   timeout             wildmenu
+noautochdir           cmdwinheight=7      diffopt=filler      foldminlines=1      iminsert=2          makeef=             previewheight=12    shell=/bin/bash   nosplitbelow          timeoutlen=1000     wildmode=full
+noautoindent          colorcolumn=      nodigraph             foldnestmax=20      imsearch=2          makeprg=make      nopreviewwindow       shellcmdflag=-c   nosplitright          title               wildoptions=
+noautoread            columns=237         display=            formatexpr=         includeexpr=        matchtime=5         printdevice=        shellquote=       nostartofline         titlelen=85         window=75
+noautowrite         nocompatible          eadirection=both    formatoptions=tcq   incsearch           maxcombine=2        printencoding=      shelltemp           suffixesadd=        titlestring=        winheight=1
+noautowriteall        concealcursor=    noedcompatible        formatprg=          indentexpr=         maxfuncdepth=100    printfont=courier   shellxquote=      noswapfile            transparency=0    nowinfixheight
+  background=dark     conceallevel=0      encoding=utf-8      fsync             noinfercase           maxmapdepth=1000    printmbcharset=     shellxescape=       swapsync=fsync    nottimeout          nowinfixwidth
+nobackup              completefunc=       endofline         nofullscreen        noinsertmode          maxmem=290618       printmbfont=      noshiftround          switchbuf=          ttimeoutlen=-1      winminheight=1
+  backupcopy=auto   noconfirm             equalalways         gdefault            isprint=@,161-255   maxmemtot=290618    printoptions=       shiftwidth=4        synmaxcol=3000      ttybuiltin          winminwidth=1
+  backupdir=~/tmp// nocopyindent          equalprg=           guifont=Cousine 9   joinspaces          menuitems=25        prompt              shortmess=atIA      syntax=           nottyfast             winwidth=20
+  backupext=~         cpoptions=aABceFs noerrorbells          guifontwide=        key=                modeline            pumheight=0       noshortname           tabline=            ttymouse=         nowrap
+  balloondelay=600    cryptmethod=zip     esckeys             guioptions=egmrL    keymap=             modelines=5         quoteescape=\       showbreak=          tabpagemax=10       ttyscroll=999       wrapmargin=0
+noballooneval         cscopepathcomp=0    eventignore=        guipty              keymodel=           modifiable        noreadonly            showcmd             tabstop=4           undofile            wrapscan
+  balloonexpr=        cscopeprg=cscope    expandtab           guitablabel=%M%t    keywordprg=man -s nomodified            redrawtime=2000   noshowfulltag         tagbsearch          undolevels=300      write
+nobinary              cscopequickfix=   noexrc                guitabtooltip=      langmap=          nomore              norelativenumber      showmatch           taglength=0         undoreload=300    nowriteany
+nobomb              nocscoperelative      fileencoding=       helpheight=20       langmenu=none       mouse=a             remap               showmode            tagrelative         updatecount=200     writebackup
+  browsedir=last    nocscopetag           fileformat=unix     helplang=           laststatus=2      nomousefocus          report=2            showtabline=0       tags=./tags,tags    updatetime=4000     writedelay=0
+  bufhidden=          cscopetagorder=0    filetype=           hidden            nolazyredraw          mousehide         norevins              sidescroll=0        tagstack            verbose=0
+  buflisted         nocscopeverbose     nofkmap               history=1000      nolinebreak           mousetime=500     norightleft           sidescrolloff=0     term=builtin_gui    verbosefile=
+  buftype=          nocursorbind          foldclose=        nohkmap               lines=76            number              ruler               smartcase         notermbidi          novisualbell
+  backspace=indent,eol,start
+  backupskip=/tmp/*,/var/folders/p2/wjk_2h4d68x2bs8mzv_4lsx00000gn/T/*
+  breakat= ^I!@*-+;:,./?
+  casemap=internal,keepascii
+  cinkeys=0{,0},0),:,0#,!^F,o,O,e
+  cinwords=if,elif,else,for,while,try,except,finally,def,class
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+  commentstring=/*%s*/
+  complete=.,w,b,u,t,i
+  completeopt=menu,preview
+  define=^\s*#\s*define
+  directory=.,~/tmp,/var/tmp,/tmp
+  errorfile=errors.err
+  errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\,,%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l\,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f"\, line %l%*\D%c%*[^ ] %m,%D%*\a[%*\d]: Entering directory `%f',%X%*\a[%*\d]: Leaving directory `%f',%D%*\a: Entering directory `%f',%X%*\a: Leaving directory `%f',%DMaking %*\a in %f,%f|%l| %m
+  fileencodings=ucs-bom,utf-8,default,latin1
+  fileformats=unix,dos
+  fillchars=vert:|,fold:-
+  foldmarker={{{,}}}
+  foldopen=block,hor,mark,percent,quickfix,search,tag,undo
+  foldtext=XMLFoldLabel()
+  formatlistpat=^\s*\d\+[\]:.)}\t ]\s*
+  fuoptions=maxvert,maxhorz
+  grepformat=%f:%l:%m,%f:%l%m,%f  %l%m
+  grepprg=grep -n $* /dev/null
+  guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
+  helpfile=~/.vim/doc/help.txt
+  highlight=8:SpecialKey,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn
+  include=^\s*#\s*include
+  indentkeys=0{,0},:,0#,!^F,o,O,e
+  isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=
+  isident=@,48-57,_,192-255
+  iskeyword=@,48-57,_,192-255,_,$,@,%,#
+  lispwords=defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object
+  matchpairs=(:),{:},[:]
+  maxmempattern=1000
+  mkspellmem=460000,2000,500
+  mousemodel=popup_setpos
+  mouseshape=i-r:beam,s:updown,sd:udsizing,vs:leftright,vd:lrsizing,m:no,ml:up-arrow,v:rightup-arrow
+  nrformats=octal,hex
+  omnifunc=pythoncomplete#Complete
+  paragraphs=IPLPPPQPP TPHPLIPpLpItpplpipbp
+  path=.,/usr/include,,
+  printexpr=system('open -a Preview '.v:fname_in) + v:shell_error
+  printheader=%<%f%h%m%=Page %N
+  rightleftcmd=search
+  runtimepath=~/.vim/bundle/vundle,~/.vim,/Applications/MacVim.app/Contents/Resources/vim/vimfiles,~/.vim,/Applications/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/vundle/,~/.vim/bundle/vundle/after
+  scrollopt=ver,jump
+  sections=SHNHH HUnhsh
+  selection=inclusive
+  sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize
+  shellpipe=2>&1| tee
+  shellredir=>%s 2>&1
+  spellcapcheck=[.?!]\_[\])'"^I ]\+
+  statusline=%F %([%R%M]%)%{'!'[&ff=='unix']}%{'$'[!&list]}%=#%n %l/%L,%c%V 
+  suffixes=.bak,~,.o,.h,.info,.swp,.obj
+  termencoding=utf-8
+  titleold=Thanks for flying Vim
+  toolbar=icons,tooltips
+  toolbariconsize=small
+  ttytype=builtin_gui
+  undodir=~/.vim/undodir
+  viewdir=~/.vim/view
+  viewoptions=folds,options,cursor
+  viminfo=!,%,'100,/5,:10,s500,n~/.viminfo
+  virtualedit=onemore
+  whichwrap=b,s,,,,,<,>,[,]
+
+--- Terminal codes ---
+  t_AB=               t_cd=               t_ut=y              t_fs=               t_le=^H             t_ms=y              t_Sb=               t_ts=               t_vb=^[|f           t_WS=               t_ZR=^[|4H
+  t_AF=               t_ce=^[|$           t_da=               t_IE=               t_mb=               t_nd=^L             t_Sf=               t_te=               t_ve=               t_SI=
+  t_AL=^[|%p1%dI      t_cl=^[|C           t_db=               t_IS=               t_md=^[|2h          t_op=               t_se=^[|16H         t_ti=               t_vi=               t_EI=
+  t_al=^[|i           t_Co=               t_DL=^[|%p1%dD      t_ke=               t_me=^[|31H         t_RI=               t_so=^[|16h         t_ue=^[|8H          t_vs=               t_xs=
+  t_bc=               t_CS=               t_dl=^[|d           t_ks=               t_mr=^[|1h          t_RV=               t_sr=               t_us=^[|8h          t_WP=               t_ZH=^[|4h
+  t_cm=^[|%p1%d;%p2%dM
+  t_cs=^[|%p1%d;%p2%dR
+  t_CV=^[|%p1%d;%p2%dV
+
+--- Auto-Commands ---
+repeatPlugin  BufEnter
+    *         if g:repeat_tick == 0|let g:repeat_tick = b:changedtick|endif
+PluginSession  BufEnter
+    *         call xolox#session#auto_dirty_check()
+BufEnter
+    *.vba     setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.gz  setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.bz2 setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.zip setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.xz  setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vmb     setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vmb.gz  setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vmb.bz2 setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vmb.zip setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vmb.xz  setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'|setlocal ma ff=unix noma|endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+filetypedetect  BufEnter
+    *.xpm     if getline(1) =~ "XPM2" |   setf xpm2 | else |   setf xpm | endif
+    *.xpm2    setf xpm2
+repeatPlugin  BufLeave
+    *         let g:repeat_tick = (g:repeat_tick == b:changedtick || g:repeat_tick == 0) ? 0 : -1
+filetypedetect  BufNewFile
+    ?\+.orig  exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.bak   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.old   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.new   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.dpkg-dist
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.dpkg-old
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.rpmsave
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.rpmnew
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    *~        let s:name = expand("<afile>") | let s:short = substitute(s:name, '\~$', '', '') | if s:name != s:short && s:short != "" |   exe "doau filetypedetect BufRead " . fnameescape(s:short) | endif | unlet! s:name s:short
+    ?\+.in    if expand("<afile>:t") != "configure.in" |   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r")) | endif
+    *.inp     call s:Check_inp()
+    *.aap     setf aap
+    */etc/a2ps.cfg
+              setf a2ps
+    */etc/a2ps/*.cfg
+              setf a2ps
+    a2psrc    setf a2ps
+    .a2psrc   setf a2ps
+    *.abap    setf abap
+    *.abc     setf abc
+    *.abl     setf abel
+    *.wrm     setf acedb
+    *.adb     setf ada
+    *.ads     setf ada
+    *.ada     setf ada
+    *.gpr     setf ada
+    *.tdf     setf ahdl
+    *.run     setf ampl
+    build.xml setf ant
+    proftpd.conf*
+              call s:StarSetf('apachestyle')
+    .htaccess setf apache
+    */etc/httpd/*.conf
+              setf apache
+    *.a65     setf a65
+    *.scpt    setf applescript
+    *.am      if expand("<afile>") !~? 'Makefile.am\>' | setf elf | endif
+    .asoundrc setf alsaconf
+    */usr/share/alsa/alsa.conf
+              setf alsaconf
+    */etc/asound.conf
+              setf alsaconf
+    *.aml     setf aml
+    .arch-inventory
+              setf arch
+    =tagging-method
+              setf arch
+    *.art     setf art
+    *.asn     setf asn
+    *.asn1    setf asn
+    *.asa     if exists("g:filetype_asa") |   exe "setf " . g:filetype_asa | else |   setf aspvbs | endif
+    *.asp     if exists("g:filetype_asp") |   exe "setf " . g:filetype_asp | elseif getline(1) . getline(2) . getline(3) =~? "perlscript" |   setf aspperl | else |   setf aspvbs | endif
+    */boot/grub/menu.lst
+              setf grub
+    */boot/grub/grub.conf
+              setf grub
+    */etc/grub.conf
+              setf grub
+    *.asm     call s:FTasm()
+    *.[sS]    call s:FTasm()
+    *.[aA]    call s:FTasm()
+    *.mac     call s:FTasm()
+    *.lst     call s:FTasm()
+    *.mar     setf vmasm
+    *.atl     setf atlas
+    *.as      setf atlas
+    *.au3     setf autoit
+    *.ahk     setf autohotkey
+    [mM]akefile.am
+              setf automake
+    GNUmakefile.am
+              setf automake
+    *.at      setf m4
+    *.ave     setf ave
+    *.awk     setf awk
+    *.mch     setf b
+    *.ref     setf b
+    *.imp     setf b
+    *.bas     call s:FTVB("basic")
+    *.vbs     setf vb
+    *.dsm     setf vb
+    *.ctl     setf vb
+    *.iba     setf ibasic
+    *.ibi     setf ibasic
+    *.fb      setf freebasic
+    *.bi      setf freebasic
+    *.bat     setf dosbatch
+    *.sys     setf dosbatch
+    *.cmd     if getline(1) =~ '^/\*' | setf rexx | else | setf dosbatch | endif
+    *.btm     call s:FTbtm()
+    *.bc      setf bc
+    *.bdf     setf bdf
+    *.bib     setf bib
+    *.bst     setf bst
+    named.conf
+              setf named
+    rndc.conf setf named
+    named.root
+              setf bindzone
+    *.db      call s:BindzoneCheck('')
+    *.bl      setf blank
+    */etc/blkid.tab
+              setf xml
+    */etc/blkid.tab.old
+              setf xml
+    *.c       call s:FTlpc()
+    calendar  setf calendar
+    *.cs      setf cs
+    *.cabal   setf cabal
+    *.toc     setf cdrtoc
+    */etc/cdrdao.conf
+              setf cdrdaoconf
+    */etc/defaults/cdrdao
+              setf cdrdaoconf
+    */etc/default/cdrdao
+              setf cdrdaoconf
+    .cdrdao   setf cdrdaoconf
+    cfengine.conf
+              setf cfengine
+    *.chai    setf chaiscript
+    *.cdl     setf cdl
+    *.recipe  setf conaryrecipe
+    *.crm     setf crm
+    *.cyn     setf cynpp
+    *.cc      if exists("cynlib_syntax_for_cc")|setf cynlib|else|setf cpp|endif
+    *.cpp     if exists("cynlib_syntax_for_cpp")|setf cynlib|else|setf cpp|endif
+    *.cxx     setf cpp
+    *.c++     setf cpp
+    *.hh      setf cpp
+    *.hxx     setf cpp
+    *.hpp     setf cpp
+    *.ipp     setf cpp
+    *.moc     setf cpp
+    *.tcc     setf cpp
+    *.inl     setf cpp
+    *.h       call s:FTheader()
+    *.chf     setf ch
+    *.tlh     setf cpp
+    *.css     setf css
+    *.con     setf cterm
+    changelog.Debian
+              setf debchangelog
+    changelog.dch
+              setf debchangelog
+    NEWS.Debian
+              setf debchangelog
+    NEWS.dch  setf debchangelog
+    [cC]hange[lL]og
+              if getline(1) =~ '; urgency='|   setf debchangelog| else|   setf changelog| endif
+    NEWS      if getline(1) =~ '; urgency='|   setf debchangelog| endif
+    *..ch     setf chill
+    *.ch      call s:FTchange()
+    *.chopro  setf chordpro
+    *.crd     setf chordpro
+    *.cho     setf chordpro
+    *.crdpro  setf chordpro
+    *.chordpro
+              setf chordpro
+    *.dcl     setf clean
+    *.icl     setf clean
+    *.eni     setf cl
+    *.ent     call s:FTent()
+    *.prg     if exists("g:filetype_prg") |   exe "setf " . g:filetype_prg | else |   setf clipper | endif
+    CMakeLists.txt
+              setf cmake
+    *.cmake   setf cmake
+    *.cmake.in
+              setf cmake
+    */.cmus/{autosave,rc,command-history,*.theme}
+              setf cmusrc
+    */cmus/{rc,*.theme}
+              setf cmusrc
+    *.cbl     setf cobol
+    *.cob     setf cobol
+    *.lib     setf cobol
+    *.cpy     if getline(1) =~ '^##' |   setf python | else |   setf cobol | endif
+    *.atg     setf coco
+    *.cfm     setf cf
+    *.cfi     setf cf
+    *.cfc     setf cf
+    configure.in
+              setf config
+    configure.ac
+              setf config
+    *.cu      setf cuda
+    *.dcd     setf dcd
+    *enlightenment/*.cfg
+              setf c
+    *Eterm/*.cfg
+              setf eterm
+    lynx.cfg  setf lynx
+    *baseq[2-3]/*.cfg
+              setf quake
+    *id1/*.cfg
+              setf quake
+    *quake[1-3]/*.cfg
+              setf quake
+    *.qc      setf c
+    *.cfg     setf cfg
+    *.feature setf cucumber
+    *.csp     setf csp
+    *.fdr     setf csp
+    *.pld     setf cupl
+    *.si      setf cuplsim
+    */debian/control
+              setf debcontrol
+    control   if getline(1) =~ '^Source:'|   setf debcontrol| endif
+    */etc/apt/sources.list
+              setf debsources
+    */etc/apt/sources.list.d/*.list
+              setf debsources
+    denyhosts.conf
+              setf denyhosts
+    */etc/dnsmasq.conf
+              setf dnsmasq
+    *.desc    setf desc
+    *.d       call s:DtraceCheck()
+    *.desktop setf desktop
+    .directory
+              setf desktop
+    dict.conf setf dictconf
+    .dictrc   setf dictconf
+    dictd.conf
+              setf dictdconf
+    *.diff    setf diff
+    *.rej     setf diff
+    *.patch   setf diff
+    .dir_colors
+              setf dircolors
+    .dircolors
+              setf dircolors
+    */etc/DIR_COLORS
+              setf dircolors
+    *.rul     if getline(1).getline(2).getline(3).getline(4).getline(5).getline(6) =~? 'InstallShield' |   setf ishd | else |   setf diva | endif
+    *.com     call s:BindzoneCheck('dcl')
+    *.dot     setf dot
+    *.lid     setf dylanlid
+    *.intr    setf dylanintr
+    *.dylan   setf dylan
+    *.def     setf def
+    *.drac    setf dracula
+    *.drc     setf dracula
+    *lvs      setf dracula
+    *lpe      setf dracula
+    *.ds      setf datascript
+    *.dsl     setf dsl
+    *.dtd     setf dtd
+    *.ed\(f\|if\|n\|o\)
+              setf edif
+    *.ecd     setf ecd
+    *.e       call s:FTe()
+    *.E       call s:FTe()
+    */etc/elinks.conf
+              setf elinks
+    */.elinks/elinks.conf
+              setf elinks
+    *.erl     setf erlang
+    *.hrl     setf erlang
+    *.yaws    setf erlang
+    filter-rules
+              setf elmfilt
+    *esmtprc  setf esmtprc
+    *.ec      setf esqlc
+    *.EC      setf esqlc
+    *.strl    setf esterel
+    *.csc     setf csc
+    exim.conf setf exim
+    *.exp     setf expect
+    exports   setf exports
+    *.fal     setf falcon
+    *.fan     setf fan
+    *.fwt     setf fan
+    *.factor  setf factor
+    .fetchmailrc
+              setf fetchmail
+    *.fex     setf focexec
+    *.focexec setf focexec
+    auto.master
+              setf conf
+    *.mas     setf master
+    *.master  setf master
+    *.fs      setf forth
+    *.ft      setf forth
+    *.frt     setf reva
+    *.f       setf fortran
+    *.for     setf fortran
+    *.fortran setf fortran
+    *.fpp     setf fortran
+    *.ftn     setf fortran
+    *.f77     setf fortran
+    *.f90     setf fortran
+    *.f95     setf fortran
+    *.f03     setf fortran
+    *.f08     setf fortran
+    *.fsl     setf framescript
+    fstab     setf fstab
+    mtab      setf fstab
+    .gdbinit  setf gdb
+    *.mo      setf gdmo
+    *.gdmo    setf gdmo
+    *.ged     setf gedcom
+    lltxxxxx.txt
+              setf gedcom
+    *.git/COMMIT_EDITMSG
+              setf gitcommit
+    *.git/config
+              setf gitconfig
+    .gitconfig
+              setf gitconfig
+    .gitmodules
+              setf gitconfig
+    git-rebase-todo
+              setf gitrebase
+    .msg.[0-9]*
+              if getline(1) =~ '^From.*# This line is ignored.$' |   setf gitsendemail | endif
+    *.git/**  if getline(1) =~ '^\x\{40\}\>\|^ref: ' |   setf git | endif
+    gkrellmrc setf gkrellmrc
+    gkrellmrc_?
+              setf gkrellmrc
+    *.gp      setf gp
+    .gprc     setf gp
+    */.gnupg/options
+              setf gpg
+    */.gnupg/gpg.conf
+              setf gpg
+    */usr/**/gnupg/options.skel
+              setf gpg
+    gnashrc   setf gnash
+    .gnashrc  setf gnash
+    gnashpluginrc
+              setf gnash
+    .gnashpluginrc
+              setf gnash
+    *.gpi     setf gnuplot
+    *.gs      setf grads
+    *.gretl   setf gretl
+    *.groovy  setf groovy
+    *.gsp     setf gsp
+    */etc/group
+              setf group
+    */etc/group-
+              setf group
+    */etc/group.edit
+              setf group
+    */etc/gshadow
+              setf group
+    */etc/gshadow-
+              setf group
+    */etc/gshadow.edit
+              setf group
+    */var/backups/group.bak
+              setf group
+    */var/backups/gshadow.bak
+              setf group
+    .gtkrc    setf gtkrc
+    gtkrc     setf gtkrc
+    *.haml    setf haml
+    *.hsc     setf hamster
+    *.hsm     setf hamster
+    *.hs      setf haskell
+    *.hs-boot setf haskell
+    *.lhs     setf lhaskell
+    *.chs     setf chaskell
+    *.ht      setf haste
+    *.htpp    setf hastepreproc
+    *.vc      setf hercules
+    *.ev      setf hercules
+    *.rs      setf hercules
+    *.sum     setf hercules
+    *.errsum  setf hercules
+    *.hex     setf hex
+    *.h32     setf hex
+    *.t.html  setf tilde
+    *.html    call s:FThtml()
+    *.htm     call s:FThtml()
+    *.shtml   call s:FThtml()
+    *.stm     call s:FThtml()
+    *.erb     setf eruby
+    *.rhtml   setf eruby
+    *.html.m4 setf htmlm4
+    *.tmpl    setf htmlcheetah
+    */etc/host.conf
+              setf hostconf
+    */etc/hosts.allow
+              setf hostsaccess
+    */etc/hosts.deny
+              setf hostsaccess
+    *.hb      setf hb
+    *.icn     setf icon
+    *.idl     call s:FTidl()
+    *.odl     setf msidl
+    *.mof     setf msidl
+    */.icewm/menu
+              setf icemenu
+    .indent.pro
+              setf indent
+    indent.pro
+              call s:ProtoCheck('indent')
+    *.pro     call s:ProtoCheck('idlang')
+    indentrc  setf indent
+    *.inf     setf inform
+    *.INF     setf inform
+    */etc/initng/**/*.i
+              setf initng
+    *.ii      setf initng
+    ipf.conf  setf ipfilter
+    ipf6.conf setf ipfilter
+    ipf.rules setf ipfilter
+    *.4gl     setf fgl
+    *.4gh     setf fgl
+    *.m4gl    setf fgl
+    *.ini     setf dosini
+    inittab   setf inittab
+    *.iss     setf iss
+    *.jal     setf jal
+    *.JAL     setf jal
+    *.jpl     setf jam
+    *.jpr     setf jam
+    *.java    setf java
+    *.jav     setf java
+    *.jj      setf javacc
+    *.jjt     setf javacc
+    *.js      setf javascript
+    *.javascript
+              setf javascript
+    *.es      setf javascript
+    *.jsx     setf javascript
+    *.jsp     setf jsp
+    *.properties
+              setf jproperties
+    *.properties_??
+              setf jproperties
+    *.properties_??_??
+              setf jproperties
+    *.properties_??_??_*
+              call s:StarSetf('jproperties')
+    *.clp     setf jess
+    *.jgr     setf jgraph
+    *.jov     setf jovial
+    *.j73     setf jovial
+    *.jovial  setf jovial
+    *.kix     setf kix
+    *.k       setf kwt
+    *.ks      setf kscript
+    Kconfig   setf kconfig
+    Kconfig.debug
+              setf kconfig
+    *.ace     setf lace
+    *.ACE     setf lace
+    *.latte   setf latte
+    *.lte     setf latte
+    */etc/limits
+              setf limits
+    */etc/*limits.conf
+              setf limits
+    */etc/*limits.d/*.conf
+              setf limits
+    *.sig     setf lprolog
+    *.ldif    setf ldif
+    *.ld      setf ld
+    *.lex     setf lex
+    *.l       setf lex
+    */etc/libao.conf
+              setf libao
+    */.libao  setf libao
+    */etc/sensors.conf
+              setf sensors
+    */etc/sensors3.conf
+              setf sensors
+    lftp.conf setf lftp
+    .lftprc   setf lftp
+    *lftp/rc  setf lftp
+    *.ll      setf lifelines
+    lilo.conf setf lilo
+    *.lsp     setf lisp
+    *.lisp    setf lisp
+    *.el      setf lisp
+    *.cl      setf lisp
+    *.jl      setf lisp
+    .emacs    setf lisp
+    .sawfishrc
+              setf lisp
+    sbclrc    setf lisp
+    .sbclrc   setf lisp
+    *.liquid  setf liquid
+    *.lite    setf lite
+    *.lt      setf lite
+    */LiteStep/*/*.rc
+              setf litestep
+    */etc/login.access
+              setf loginaccess
+    */etc/login.defs
+              setf logindefs
+    *.lgt     setf logtalk
+    *.lot     setf lotos
+    *.lotos   setf lotos
+    *.lou     setf lout
+    *.lout    setf lout
+    *.lua     setf lua
+    *.lsl     setf lsl
+    *.lss     setf lss
+    *.m4      if expand("<afile>") !~? 'html.m4$\|fvwm2rc' | setf m4 | endif
+    *.mgp     setf mgp
+    snd.\d\+  setf mail
+    .letter   setf mail
+    .letter.\d\+
+              setf mail
+    .followup setf mail
+    .article  setf mail
+    .article.\d\+
+              setf mail
+    pico.\d\+ setf mail
+    mutt{ng,}-*-\w\+
+              setf mail
+    mutt[[:alnum:]_-]\{6\}
+              setf mail
+    ae\d\+.txt
+              setf mail
+    /tmp/SLRN[0-9A-Z.]\+
+              setf mail
+    *.eml     setf mail
+    */etc/mail/aliases
+              setf mailaliases
+    */etc/aliases
+              setf mailaliases
+    .mailcap  setf mailcap
+    mailcap   setf mailcap
+    *[mM]akefile
+              setf make
+    *.mk      setf make
+    *.mak     setf make
+    *.dsp     setf make
+    *.ist     setf ist
+    *.mst     setf ist
+    *.man     setf man
+    */etc/man.conf
+              setf manconf
+    man.config
+              setf manconf
+    *.mv      setf maple
+    *.mpl     setf maple
+    *.mws     setf maple
+    *.map     setf map
+    *.markdown
+              setf markdown
+    *.mdown   setf markdown
+    *.mkd     setf markdown
+    *.mkdn    setf markdown
+    README.md setf markdown
+    *.mason   setf mason
+    *.mhtml   setf mason
+    *.m       call s:FTm()
+    *.nb      setf mma
+    *.mel     setf mel
+    *.hgrc    setf cfg
+    *hgrc     setf cfg
+    */log/{auth,cron,daemon,debug,kern,lpr,mail,messages,news/news,syslog,user}{,.log,.err,.info,.warn,.crit,.notice}{,.[0-9]*,-[0-9]*}
+              setf messages
+    *.mf      setf mf
+    *.mp      setf mp
+    *.mgl     setf mgl
+    *.mms     call s:FTmms()
+    *.mmp     setf mmp
+    *.mod     if getline(1) =~ '\<module\>' |   setf lprolog | else |   setf modsim3 | endif
+    *.m2      setf modula2
+    *.DEF     setf modula2
+    *.MOD     setf modula2
+    *.md      setf modula2
+    *.mi      setf modula2
+    *.[mi][3g]
+              setf modula3
+    *.isc     setf monk
+    *.monk    setf monk
+    *.ssc     setf monk
+    *.tsc     setf monk
+    *.moo     setf moo
+    */etc/modules.conf
+              setf modconf
+    */etc/modules
+              setf modconf
+    */etc/conf.modules
+              setf modconf
+    mplayer.conf
+              setf mplayerconf
+    */.mplayer/config
+              setf mplayerconf
+    *.s19     setf srec
+    *.s28     setf srec
+    *.s37     setf srec
+    mrxvtrc   setf mrxvtrc
+    .mrxvtrc  setf mrxvtrc
+    *.msql    setf msql
+    *.mysql   setf mysql
+    */etc/Muttrc.d/*
+              call s:StarSetf('muttrc')
+    *.rc      setf rc
+    *.mu      setf mupad
+    *.mush    setf mush
+    Mutt{ng,}rc
+              setf muttrc
+    */etc/nanorc
+              setf nanorc
+    .nanorc   setf nanorc
+    *.NS[ACGLMNPS]
+              setf natural
+    .netrc    setf netrc
+    *.ncf     setf ncf
+    *.me      if expand("<afile>") != "read.me" && expand("<afile>") != "click.me" |   setf nroff | endif
+    *.tr      setf nroff
+    *.nr      setf nroff
+    *.roff    setf nroff
+    *.tmac    setf nroff
+    *.mom     setf nroff
+    *.[1-9]   call s:FTnroff()
+    *.mm      call s:FTmm()
+    *.nqc     setf nqc
+    *.nsi     setf nsis
+    *.ml      setf ocaml
+    *.mli     setf ocaml
+    *.mll     setf ocaml
+    *.mly     setf ocaml
+    *.occ     setf occam
+    *.xom     setf omnimark
+    *.xin     setf omnimark
+    *.or      setf openroad
+    *.[Oo][Pp][Ll]
+              setf opl
+    *.ora     setf ora
+    pf.conf   setf pf
+    */etc/pam.conf
+              setf pamconf
+    *.papp    setf papp
+    *.pxml    setf papp
+    *.pxsl    setf papp
+    */etc/passwd
+              setf passwd
+    */etc/passwd-
+              setf passwd
+    */etc/passwd.edit
+              setf passwd
+    */etc/shadow
+              setf passwd
+    */etc/shadow-
+              setf passwd
+    */etc/shadow.edit
+              setf passwd
+    */var/backups/passwd.bak
+              setf passwd
+    */var/backups/shadow.bak
+              setf passwd
+    *.pas     setf pascal
+    *.dpr     setf pascal
+    *.pdf     setf pdf
+    *.pl      call s:FTpl()
+    *.plx     setf perl
+    *.al      setf perl
+    *.p6      setf perl6
+    *.pm6     setf perl6
+    *.pm      if getline(1) =~ "XPM2" |   setf xpm2 | elseif getline(1) =~ "XPM" |   setf xpm | else |   setf perl | endif
+    *.pod     setf pod
+    *.php     setf php
+    *.php\d   setf php
+    *.phtml   setf php
+    *.ctp     setf php
+    *.pike    setf pike
+    *.lpc     setf pike
+    *.ulpc    setf pike
+    *.pmod    setf pike
+    */etc/pinforc
+              setf pinfo
+    */.pinforc
+              setf pinfo
+    *.rcp     setf pilrc
+    .pinerc   setf pine
+    pinerc    setf pine
+    .pinercex setf pine
+    pinercex  setf pine
+    *.plm     setf plm
+    *.p36     setf plm
+    *.pac     setf plm
+    *.pls     setf plsql
+    *.plsql   setf plsql
+    *.plp     setf plp
+    *.po      setf po
+    *.pot     setf po
+    main.cf   setf pfmain
+    *.ps      setf postscr
+    *.pfa     setf postscr
+    *.afm     setf postscr
+    *.eps     setf postscr
+    *.epsf    setf postscr
+    *.epsi    setf postscr
+    *.ai      setf postscr
+    *.ppd     setf ppd
+    *.pov     setf pov
+    .povrayrc setf povini
+    *.inc     call s:FTinc()
+    *printcap let b:ptcap_type = "print" | setf ptcap
+    *termcap  let b:ptcap_type = "term" | setf ptcap
+    *.g       setf pccts
+    *.it      setf ppwiz
+    *.ih      setf ppwiz
+    *.obj     setf obj
+    *.pc      setf proc
+    *.action  setf privoxy
+    .procmail setf procmail
+    .procmailrc
+              setf procmail
+    *.w       call s:FTprogress_cweb()
+    *.i       call s:FTprogress_asm()
+    *.p       call s:FTprogress_pascal()
+    *.psf     setf psf
+    INDEX     if getline(1) =~ '^\s*\(distribution\|installed_software\|root\|bundle\|product\)\s*$' |   setf psf | endif
+    INFO      if getline(1) =~ '^\s*\(distribution\|installed_software\|root\|bundle\|product\)\s*$' |   setf psf | endif
+    *.pdb     setf prolog
+    *.pml     setf promela
+    */etc/protocols
+              setf protocols
+    *.pyx     setf pyrex
+    *.pxd     setf pyrex
+    *.py      setf python
+    *.pyw     setf python
+    *.ptl     setf python
+    *.rad     setf radiance
+    *.mat     setf radiance
+    .ratpoisonrc
+              setf ratpoison
+    ratpoisonrc
+              setf ratpoison
+    *\,v      setf rcs
+    .inputrc  setf readline
+    inputrc   setf readline
+    *.reg     if getline(1) =~? '^REGEDIT[0-9]*\s*$\|^Windows Registry Editor Version \d*\.\d*\s*$' | setf registry | endif
+    *.rib     setf rib
+    *.rexx    setf rexx
+    *.rex     setf rexx
+    *.jrexx   setf rexx
+    *.rxj     setf rexx
+    *.orx     setf rexx
+    *.s       setf r
+    *.rd      setf rhelp
+    *.rnw     setf rnoweb
+    *.snw     setf rnoweb
+    *.r       call s:FTr()
+    *.R       call s:FTr()
+    .reminders
+              setf remind
+    *.remind  setf remind
+    *.rem     setf remind
+    resolv.conf
+              setf resolv
+    *.rnc     setf rnc
+    *.rpl     setf rpl
+    robots.txt
+              setf robots
+    *.x       setf rpcgen
+    *.rst     setf rst
+    *.rtf     setf rtf
+    .irbrc    setf ruby
+    irbrc     setf ruby
+    *.rb      setf ruby
+    *.rbw     setf ruby
+    *.gemspec setf ruby
+    *.ru      setf ruby
+    Gemfile   setf ruby
+    *.builder setf ruby
+    *.rxml    setf ruby
+    *.rjs     setf ruby
+    [rR]antfile
+              setf ruby
+    *.rant    setf ruby
+    [rR]akefile
+              setf ruby
+    *.rake    setf ruby
+    *.sl      setf slang
+    smb.conf  setf samba
+    *.sas     setf sas
+    *.sass    setf sass
+    *.sa      setf sather
+    *.sci     setf scilab
+    *.sce     setf scilab
+    *.scss    setf scss
+    *.sd      setf sd
+    *.sdl     setf sdl
+    *.pr      setf sdl
+    *.sed     setf sed
+    *.siv     setf sieve
+    sendmail.cf
+              setf sm
+    *.mc      call s:McSetf()
+    */etc/services
+              setf services
+    */etc/slp.conf
+              setf slpconf
+    */etc/slp.reg
+              setf slpreg
+    */etc/slp.spi
+              setf slpspi
+    */etc/serial.conf
+              setf setserial
+    *.sgm     if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'linuxdoc' |   setf sgmllnx | elseif getline(1) =~ '<!DOCTYPE.*DocBook' || getline(2) =~ '<!DOCTYPE.*DocBook' |   let b:docbk_type="sgml" |   setf docbk | else |   setf sgml | endif
+    *.sgml    if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'linuxdoc' |   setf sgmllnx | elseif getline(1) =~ '<!DOCTYPE.*DocBook' || getline(2) =~ '<!DOCTYPE.*DocBook' |   let b:docbk_type="sgml" |   setf docbk | else |   setf sgml | endif
+    *.decl    if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    *.dcl     if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    *.dec     if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    catalog   setf catalog
+    sgml.catalog*
+              call s:StarSetf('catalog')
+    .bashrc*  call SetFileTypeSH("bash")
+    bashrc    call SetFileTypeSH("bash")
+    bash.bashrc
+              call SetFileTypeSH("bash")
+    .bash_profile*
+              call SetFileTypeSH("bash")
+    .bash_logout*
+              call SetFileTypeSH("bash")
+    *.bash    call SetFileTypeSH("bash")
+    *.ebuild  call SetFileTypeSH("bash")
+    .kshrc*   call SetFileTypeSH("ksh")
+    *.ksh     call SetFileTypeSH("ksh")
+    */etc/profile
+              call SetFileTypeSH(getline(1))
+    .profile* call SetFileTypeSH(getline(1))
+    *.sh      call SetFileTypeSH(getline(1))
+    *.env     call SetFileTypeSH(getline(1))
+    .tcshrc*  call SetFileTypeShell("tcsh")
+    *.tcsh    call SetFileTypeShell("tcsh")
+    tcsh.tcshrc
+              call SetFileTypeShell("tcsh")
+    tcsh.login
+              call SetFileTypeShell("tcsh")
+    .login*   call s:CSH()
+    .cshrc*   call s:CSH()
+    csh.cshrc call s:CSH()
+    csh.login call s:CSH()
+    csh.logout
+              call s:CSH()
+    *.csh     call s:CSH()
+    .alias    call s:CSH()
+    .zprofile setf zsh
+    */etc/zprofile
+              setf zsh
+    .zfbfmarks
+              setf zsh
+    .zsh*     call s:StarSetf('zsh')
+    .zlog*    call s:StarSetf('zsh')
+    .zcompdump*
+              call s:StarSetf('zsh')
+    *.zsh     setf zsh
+    *.scm     setf scheme
+    *.ss      setf scheme
+    .screenrc setf screen
+    screenrc  setf screen
+    *.sim     setf simula
+    *.sin     setf sinda
+    *.s85     setf sinda
+    *.sst     setf sisu
+    *.ssm     setf sisu
+    *.ssi     setf sisu
+    *.-sst    setf sisu
+    *._sst    setf sisu
+    *.sst.meta
+              setf sisu
+    *.-sst.meta
+              setf sisu
+    *._sst.meta
+              setf sisu
+    *.il      setf skill
+    *.ils     setf skill
+    *.cdf     setf skill
+    .slrnrc   setf slrnrc
+    *.score   setf slrnsc
+    *.st      setf st
+    *.cls     if getline(1) =~ '^%' |  setf tex | else |  setf st | endif
+    *.tpl     setf smarty
+    *.smil    if getline(1) =~ '<?\s*xml.*?>' |   setf xml | else |   setf smil | endif
+    *.smi     if getline(1) =~ '\<smil\>' |   setf smil | else |   setf mib | endif
+    *.smt     setf smith
+    *.smith   setf smith
+    *.sno     setf snobol4
+    *.spt     setf snobol4
+    *.mib     setf mib
+    *.my      setf mib
+    *.hog     setf hog
+    snort.conf
+              setf hog
+    vision.conf
+              setf hog
+    *.rules   call s:FTRules()
+    *.spec    setf spec
+    *.speedup setf spup
+    *.spdata  setf spup
+    *.spd     setf spup
+    *.ice     setf slice
+    *.sp      setf spice
+    *.spice   setf spice
+    *.spy     setf spyce
+    *.spi     setf spyce
+    squid.conf
+              setf squid
+    *.tyb     setf sql
+    *.typ     setf sql
+    *.tyc     setf sql
+    *.pkb     setf sql
+    *.pks     setf sql
+    *.sql     call s:SQL()
+    *.sqlj    setf sqlj
+    *.sqr     setf sqr
+    *.sqi     setf sqr
+    ssh_config
+              setf sshconfig
+    */.ssh/config
+              setf sshconfig
+    sshd_config
+              setf sshdconfig
+    *.ado     setf stata
+    *.class   setf stata
+    *.do      setf stata
+    *.imata   setf stata
+    *.mata    setf stata
+    *.hlp     setf smcl
+    *.ihlp    setf smcl
+    *.smcl    setf smcl
+    *.stp     setf stp
+    *.sml     setf sml
+    *.cm      setf voscm
+    */etc/sysctl.conf
+              setf sysctl
+    */etc/sysctl.d/*.conf
+              setf sysctl
+    *.sdc     setf sdc
+    */etc/sudoers
+              setf sudoers
+    sudoers.tmp
+              setf sudoers
+    *.svg     setf svg
+    *.t       if !s:FTnroff() && !s:FTperl() | setf tads | endif
+    tags      setf tags
+    *.tak     setf tak
+    {pending,completed,undo}.data
+              setf taskdata
+    *.task    setf taskedit
+    *.tcl     setf tcl
+    *.tk      setf tcl
+    *.itcl    setf tcl
+    *.itk     setf tcl
+    *.jacl    setf tcl
+    *.tli     setf tli
+    *.slt     setf tsalt
+    *.ti      setf terminfo
+    *.latex   setf tex
+    *.sty     setf tex
+    *.dtx     setf tex
+    *.ltx     setf tex
+    *.bbl     setf tex
+    *.tex     call s:FTtex()
+    tex/context/*/*.tex
+              setf context
+    *.mkii    setf context
+    *.mkiv    setf context
+    *.texinfo setf texinfo
+    *.texi    setf texinfo
+    *.txi     setf texinfo
+    texmf.cnf setf texmf
+    .tidyrc   setf tidy
+    tidyrc    setf tidy
+    *.tf      setf tf
+    .tfrc     setf tf
+    tfrc      setf tf
+    *.tpp     setf tpp
+    *.treetop setf treetop
+    trustees.conf
+              setf trustees
+    *.tssgm   setf tssgm
+    *.tssop   setf tssop
+    *.tsscl   setf tsscl
+    *.uit     setf uil
+    *.uil     setf uil
+    */etc/udev/udev.conf
+              setf udevconf
+    */etc/udev/permissions.d/*.permissions
+              setf udevperm
+    */etc/udev/cdsymlinks.conf
+              setf sh
+    *.uc      setf uc
+    */etc/updatedb.conf
+              setf updatedb
+    */etc/init/*.conf
+              setf upstart
+    */.init/*.conf
+              setf upstart
+    */etc/init/*.override
+              setf upstart
+    */.init/*.override
+              setf upstart
+    *.vr      setf vera
+    *.vri     setf vera
+    *.vrh     setf vera
+    *.v       setf verilog
+    *.va      setf verilogams
+    *.vams    setf verilogams
+    *.hdl     setf vhdl
+    *.vhd     setf vhdl
+    *.vhdl    setf vhdl
+    *.vbe     setf vhdl
+    *.vst     setf vhdl
+    *.vhdl_[0-9]*
+              call s:StarSetf('vhdl')
+    *.vim     setf vim
+    *.vba     setf vim
+    .exrc     setf vim
+    _exrc     setf vim
+    .viminfo  setf viminfo
+    _viminfo  setf viminfo
+    *.hw      if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.module  if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.pkg     if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.frm     call s:FTVB("form")
+    *.sba     setf vb
+    vgrindefs setf vgrindefs
+    *.wrl     setf vrml
+    *.wm      setf webmacro
+    .wgetrc   setf wget
+    wgetrc    setf wget
+    *.wml     setf wml
+    *.wbt     setf winbatch
+    *.wsml    setf wsml
+    wvdial.conf
+              setf wvdial
+    .wvdialrc setf wvdial
+    .cvsrc    setf cvsrc
+    cvs\d\+   setf cvs
+    *.web     if getline(1)[0].getline(2)[0].getline(3)[0].getline(4)[0].getline(5)[0] =~ "%" |   setf web | else |   setf winbatch | endif
+    *.ws[fc]  setf wsh
+    *.xhtml   setf xhtml
+    *.xht     setf xhtml
+    XF86Config
+              if getline(1) =~ '\<XConfigurator\>' |   let b:xf86conf_xfree86_version = 3 | endif | setf xf86conf
+    */xorg.conf.d/*.conf
+              let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    xorg.conf let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    xorg.conf-4
+              let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    */etc/xinetd.conf
+              setf xinetd
+    *.xs      setf xs
+    .Xdefaults
+              setf xdefaults
+    .Xpdefaults
+              setf xdefaults
+    .Xresources
+              setf xdefaults
+    xdm-config
+              setf xdefaults
+    *.ad      setf xdefaults
+    *.msc     setf xmath
+    *.msf     setf xmath
+    *.ms      if !s:FTnroff() | setf xmath | endif
+    *.xml     call s:FTxml()
+    *.xmi     setf xml
+    *.csproj  setf xml
+    *.csproj.user
+              setf xml
+    *.ts      setf xml
+    *.ui      setf xml
+    *.tpm     setf xml
+    */etc/xdg/menus/*.menu
+              setf xml
+    fglrxrc   setf xml
+    *.xlf     setf xml
+    *.xliff   setf xml
+    *Xmodmap  setf xmodmap
+    *.xq      setf xquery
+    *.xql     setf xquery
+    *.xqm     setf xquery
+    *.xquery  setf xquery
+    *.xqy     setf xquery
+    *.xsd     setf xsd
+    *.xsl     setf xslt
+    *.xslt    setf xslt
+    *.yy      setf yacc
+    *.y       call s:FTy()
+    *.yaml    setf yaml
+    *.yml     setf yaml
+    *.dtml    call s:FThtml()
+    *.pt      call s:FThtml()
+    *.cpt     call s:FThtml()
+    *.zsql    call s:SQL()
+    *.z8a     setf z8a
+    *         if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+    access.conf*
+              call s:StarSetf('apache')
+    apache.conf*
+              call s:StarSetf('apache')
+    apache2.conf*
+              call s:StarSetf('apache')
+    httpd.conf*
+              call s:StarSetf('apache')
+    srm.conf* call s:StarSetf('apache')
+    */etc/apache2/*.conf*
+              call s:StarSetf('apache')
+    */etc/apache2/conf.*/*
+              call s:StarSetf('apache')
+    */etc/apache2/mods-*/*
+              call s:StarSetf('apache')
+    */etc/apache2/sites-*/*
+              call s:StarSetf('apache')
+    */etc/httpd/conf.d/*.conf*
+              call s:StarSetf('apache')
+    *asterisk/*.conf*
+              call s:StarSetf('asterisk')
+    *asterisk*/*voicemail.conf*
+              call s:StarSetf('asteriskvm')
+    bzr_log.* setf bzr
+    */named/db.*
+              call s:StarSetf('bindzone')
+    */bind/db.*
+              call s:StarSetf('bindzone')
+    */.calendar/*
+              call s:StarSetf('calendar')
+    */share/calendar/*/calendar.*
+              call s:StarSetf('calendar')
+    */share/calendar/calendar.*
+              call s:StarSetf('calendar')
+    [cC]hange[lL]og*
+              if getline(1) =~ '; urgency='|  call s:StarSetf('debchangelog')|else|  call s:StarSetf('changelog')|endif
+    crontab   call s:StarSetf('crontab')
+    crontab.* call s:StarSetf('crontab')
+    */etc/cron.d/*
+              call s:StarSetf('crontab')
+    */etc/dnsmasq.d/*
+              call s:StarSetf('dnsmasq')
+    drac.*    call s:StarSetf('dracula')
+    */.fvwm/* call s:StarSetf('fvwm')
+    *fvwmrc*  let b:fvwm_version = 1 | call s:StarSetf('fvwm')
+    *fvwm95*.hook
+              let b:fvwm_version = 1 | call s:StarSetf('fvwm')
+    *fvwm2rc* if expand("<afile>:e") == "m4"|  call s:StarSetf('fvwm2m4')|else|  let b:fvwm_version = 2 | call s:StarSetf('fvwm')|endif
+    */tmp/lltmp*
+              call s:StarSetf('gedcom')
+    .gtkrc*   call s:StarSetf('gtkrc')
+    gtkrc*    call s:StarSetf('gtkrc')
+    Prl*.*    call s:StarSetf('jam')
+    JAM*.*    call s:StarSetf('jam')
+    *jarg*    if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'THIS IS THE JARGON FILE'|  call s:StarSetf('jargon')|endif
+    Kconfig.* call s:StarSetf('kconfig')
+    lilo.conf*
+              call s:StarSetf('lilo')
+    */etc/logcheck/*.d*/*
+              call s:StarSetf('logcheck')
+    [mM]akefile*
+              call s:StarSetf('make')
+    [rR]akefile*
+              call s:StarSetf('ruby')
+    mutt[[:alnum:]._-]\{6\}
+              setf mail
+    */etc/modutils/*
+              if executable(expand("<afile>")) != 1|  call s:StarSetf('modconf')|endif
+    */etc/modprobe.*
+              call s:StarSetf('modconf')
+    .mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    */.mutt{ng,}/mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    Mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    tmac.*    call s:StarSetf('nroff')
+    */etc/pam.d/*
+              call s:StarSetf('pamconf')
+    *printcap*
+              if !did_filetype()|  let b:ptcap_type = "print" | call s:StarSetf('ptcap')|endif
+    *termcap* if !did_filetype()|  let b:ptcap_type = "term" | call s:StarSetf('ptcap')|endif
+    .reminders*
+              call s:StarSetf('remind')
+    *vimrc*   call s:StarSetf('vim')
+    svn-commit*.tmp
+              setf svn
+    Xresources*
+              call s:StarSetf('xdefaults')
+    */app-defaults/*
+              call s:StarSetf('xdefaults')
+    */Xresources/*
+              call s:StarSetf('xdefaults')
+    XF86Config-4*
+              let b:xf86conf_xfree86_version = 4 | call s:StarSetf('xf86conf')
+    XF86Config*
+              if getline(1) =~ '\<XConfigurator\>'|  let b:xf86conf_xfree86_version = 3|endif|call s:StarSetf('xf86conf')
+    *xmodmap* call s:StarSetf('xmodmap')
+    */etc/xinetd.d/*
+              call s:StarSetf('xinetd')
+    zsh*      call s:StarSetf('zsh')
+    zlog*     call s:StarSetf('zsh')
+    *         if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (getline(1) =~ '^#' || getline(2) =~ '^#' || getline(3) =~ '^#'^I|| getline(4) =~ '^#' || getline(5) =~ '^#') |   setf conf | endif
+Shebang  BufNewFile
+    *.py      0put =\"#!/usr/bin/env python\<nl># encoding: UTF-8\<nl>\"|$
+filetypedetect  BufRead
+    ?\+.orig  exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.bak   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.old   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.new   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.dpkg-dist
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.dpkg-old
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.rpmsave
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    ?\+.rpmnew
+              exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r"))
+    *~        let s:name = expand("<afile>") | let s:short = substitute(s:name, '\~$', '', '') | if s:name != s:short && s:short != "" |   exe "doau filetypedetect BufRead " . fnameescape(s:short) | endif | unlet! s:name s:short
+    ?\+.in    if expand("<afile>:t") != "configure.in" |   exe "doau filetypedetect BufRead " . fnameescape(expand("<afile>:r")) | endif
+    *.inp     call s:Check_inp()
+    *.aap     setf aap
+    */etc/a2ps.cfg
+              setf a2ps
+    */etc/a2ps/*.cfg
+              setf a2ps
+    a2psrc    setf a2ps
+    .a2psrc   setf a2ps
+    *.abap    setf abap
+    *.abc     setf abc
+    *.abl     setf abel
+    *.wrm     setf acedb
+    *.adb     setf ada
+    *.ads     setf ada
+    *.ada     setf ada
+    *.gpr     setf ada
+    *.tdf     setf ahdl
+    *.run     setf ampl
+    build.xml setf ant
+    proftpd.conf*
+              call s:StarSetf('apachestyle')
+    .htaccess setf apache
+    */etc/httpd/*.conf
+              setf apache
+    *.a65     setf a65
+    *.scpt    setf applescript
+    *.am      if expand("<afile>") !~? 'Makefile.am\>' | setf elf | endif
+    .asoundrc setf alsaconf
+    */usr/share/alsa/alsa.conf
+              setf alsaconf
+    */etc/asound.conf
+              setf alsaconf
+    *.aml     setf aml
+    .arch-inventory
+              setf arch
+    =tagging-method
+              setf arch
+    *.art     setf art
+    *.asn     setf asn
+    *.asn1    setf asn
+    *.asa     if exists("g:filetype_asa") |   exe "setf " . g:filetype_asa | else |   setf aspvbs | endif
+    *.asp     if exists("g:filetype_asp") |   exe "setf " . g:filetype_asp | elseif getline(1) . getline(2) . getline(3) =~? "perlscript" |   setf aspperl | else |   setf aspvbs | endif
+    */boot/grub/menu.lst
+              setf grub
+    */boot/grub/grub.conf
+              setf grub
+    */etc/grub.conf
+              setf grub
+    *.asm     call s:FTasm()
+    *.[sS]    call s:FTasm()
+    *.[aA]    call s:FTasm()
+    *.mac     call s:FTasm()
+    *.lst     call s:FTasm()
+    *.mar     setf vmasm
+    *.atl     setf atlas
+    *.as      setf atlas
+    *.au3     setf autoit
+    *.ahk     setf autohotkey
+    [mM]akefile.am
+              setf automake
+    GNUmakefile.am
+              setf automake
+    *.at      setf m4
+    *.ave     setf ave
+    *.awk     setf awk
+    *.mch     setf b
+    *.ref     setf b
+    *.imp     setf b
+    *.bas     call s:FTVB("basic")
+    *.vbs     setf vb
+    *.dsm     setf vb
+    *.ctl     setf vb
+    *.iba     setf ibasic
+    *.ibi     setf ibasic
+    *.fb      setf freebasic
+    *.bi      setf freebasic
+    *.bat     setf dosbatch
+    *.sys     setf dosbatch
+    *.cmd     if getline(1) =~ '^/\*' | setf rexx | else | setf dosbatch | endif
+    *.btm     call s:FTbtm()
+    *.bc      setf bc
+    *.bdf     setf bdf
+    *.bib     setf bib
+    *.bst     setf bst
+    named.conf
+              setf named
+    rndc.conf setf named
+    named.root
+              setf bindzone
+    *.db      call s:BindzoneCheck('')
+    *.bl      setf blank
+    */etc/blkid.tab
+              setf xml
+    */etc/blkid.tab.old
+              setf xml
+    *.c       call s:FTlpc()
+    calendar  setf calendar
+    *.cs      setf cs
+    *.cabal   setf cabal
+    *.toc     setf cdrtoc
+    */etc/cdrdao.conf
+              setf cdrdaoconf
+    */etc/defaults/cdrdao
+              setf cdrdaoconf
+    */etc/default/cdrdao
+              setf cdrdaoconf
+    .cdrdao   setf cdrdaoconf
+    cfengine.conf
+              setf cfengine
+    *.chai    setf chaiscript
+    *.cdl     setf cdl
+    *.recipe  setf conaryrecipe
+    *.crm     setf crm
+    *.cyn     setf cynpp
+    *.cc      if exists("cynlib_syntax_for_cc")|setf cynlib|else|setf cpp|endif
+    *.cpp     if exists("cynlib_syntax_for_cpp")|setf cynlib|else|setf cpp|endif
+    *.cxx     setf cpp
+    *.c++     setf cpp
+    *.hh      setf cpp
+    *.hxx     setf cpp
+    *.hpp     setf cpp
+    *.ipp     setf cpp
+    *.moc     setf cpp
+    *.tcc     setf cpp
+    *.inl     setf cpp
+    *.h       call s:FTheader()
+    *.chf     setf ch
+    *.tlh     setf cpp
+    *.css     setf css
+    *.con     setf cterm
+    changelog.Debian
+              setf debchangelog
+    changelog.dch
+              setf debchangelog
+    NEWS.Debian
+              setf debchangelog
+    NEWS.dch  setf debchangelog
+    [cC]hange[lL]og
+              if getline(1) =~ '; urgency='|   setf debchangelog| else|   setf changelog| endif
+    NEWS      if getline(1) =~ '; urgency='|   setf debchangelog| endif
+    *..ch     setf chill
+    *.ch      call s:FTchange()
+    *.chopro  setf chordpro
+    *.crd     setf chordpro
+    *.cho     setf chordpro
+    *.crdpro  setf chordpro
+    *.chordpro
+              setf chordpro
+    *.dcl     setf clean
+    *.icl     setf clean
+    *.eni     setf cl
+    *.ent     call s:FTent()
+    *.prg     if exists("g:filetype_prg") |   exe "setf " . g:filetype_prg | else |   setf clipper | endif
+    CMakeLists.txt
+              setf cmake
+    *.cmake   setf cmake
+    *.cmake.in
+              setf cmake
+    */.cmus/{autosave,rc,command-history,*.theme}
+              setf cmusrc
+    */cmus/{rc,*.theme}
+              setf cmusrc
+    *.cbl     setf cobol
+    *.cob     setf cobol
+    *.lib     setf cobol
+    *.cpy     if getline(1) =~ '^##' |   setf python | else |   setf cobol | endif
+    *.atg     setf coco
+    *.cfm     setf cf
+    *.cfi     setf cf
+    *.cfc     setf cf
+    configure.in
+              setf config
+    configure.ac
+              setf config
+    *.cu      setf cuda
+    *.dcd     setf dcd
+    *enlightenment/*.cfg
+              setf c
+    *Eterm/*.cfg
+              setf eterm
+    lynx.cfg  setf lynx
+    *baseq[2-3]/*.cfg
+              setf quake
+    *id1/*.cfg
+              setf quake
+    *quake[1-3]/*.cfg
+              setf quake
+    *.qc      setf c
+    *.cfg     setf cfg
+    *.feature setf cucumber
+    *.csp     setf csp
+    *.fdr     setf csp
+    *.pld     setf cupl
+    *.si      setf cuplsim
+    */debian/control
+              setf debcontrol
+    control   if getline(1) =~ '^Source:'|   setf debcontrol| endif
+    */etc/apt/sources.list
+              setf debsources
+    */etc/apt/sources.list.d/*.list
+              setf debsources
+    denyhosts.conf
+              setf denyhosts
+    */etc/dnsmasq.conf
+              setf dnsmasq
+    *.desc    setf desc
+    *.d       call s:DtraceCheck()
+    *.desktop setf desktop
+    .directory
+              setf desktop
+    dict.conf setf dictconf
+    .dictrc   setf dictconf
+    dictd.conf
+              setf dictdconf
+    *.diff    setf diff
+    *.rej     setf diff
+    *.patch   setf diff
+    .dir_colors
+              setf dircolors
+    .dircolors
+              setf dircolors
+    */etc/DIR_COLORS
+              setf dircolors
+    *.rul     if getline(1).getline(2).getline(3).getline(4).getline(5).getline(6) =~? 'InstallShield' |   setf ishd | else |   setf diva | endif
+    *.com     call s:BindzoneCheck('dcl')
+    *.dot     setf dot
+    *.lid     setf dylanlid
+    *.intr    setf dylanintr
+    *.dylan   setf dylan
+    *.def     setf def
+    *.drac    setf dracula
+    *.drc     setf dracula
+    *lvs      setf dracula
+    *lpe      setf dracula
+    *.ds      setf datascript
+    *.dsl     setf dsl
+    *.dtd     setf dtd
+    *.ed\(f\|if\|n\|o\)
+              setf edif
+    *.ecd     setf ecd
+    *.e       call s:FTe()
+    *.E       call s:FTe()
+    */etc/elinks.conf
+              setf elinks
+    */.elinks/elinks.conf
+              setf elinks
+    *.erl     setf erlang
+    *.hrl     setf erlang
+    *.yaws    setf erlang
+    filter-rules
+              setf elmfilt
+    *esmtprc  setf esmtprc
+    *.ec      setf esqlc
+    *.EC      setf esqlc
+    *.strl    setf esterel
+    *.csc     setf csc
+    exim.conf setf exim
+    *.exp     setf expect
+    exports   setf exports
+    *.fal     setf falcon
+    *.fan     setf fan
+    *.fwt     setf fan
+    *.factor  setf factor
+    .fetchmailrc
+              setf fetchmail
+    *.fex     setf focexec
+    *.focexec setf focexec
+    auto.master
+              setf conf
+    *.mas     setf master
+    *.master  setf master
+    *.fs      setf forth
+    *.ft      setf forth
+    *.frt     setf reva
+    *.f       setf fortran
+    *.for     setf fortran
+    *.fortran setf fortran
+    *.fpp     setf fortran
+    *.ftn     setf fortran
+    *.f77     setf fortran
+    *.f90     setf fortran
+    *.f95     setf fortran
+    *.f03     setf fortran
+    *.f08     setf fortran
+    *.fsl     setf framescript
+    fstab     setf fstab
+    mtab      setf fstab
+    .gdbinit  setf gdb
+    *.mo      setf gdmo
+    *.gdmo    setf gdmo
+    *.ged     setf gedcom
+    lltxxxxx.txt
+              setf gedcom
+    *.git/COMMIT_EDITMSG
+              setf gitcommit
+    *.git/config
+              setf gitconfig
+    .gitconfig
+              setf gitconfig
+    .gitmodules
+              setf gitconfig
+    git-rebase-todo
+              setf gitrebase
+    .msg.[0-9]*
+              if getline(1) =~ '^From.*# This line is ignored.$' |   setf gitsendemail | endif
+    *.git/**  if getline(1) =~ '^\x\{40\}\>\|^ref: ' |   setf git | endif
+    gkrellmrc setf gkrellmrc
+    gkrellmrc_?
+              setf gkrellmrc
+    *.gp      setf gp
+    .gprc     setf gp
+    */.gnupg/options
+              setf gpg
+    */.gnupg/gpg.conf
+              setf gpg
+    */usr/**/gnupg/options.skel
+              setf gpg
+    gnashrc   setf gnash
+    .gnashrc  setf gnash
+    gnashpluginrc
+              setf gnash
+    .gnashpluginrc
+              setf gnash
+    *.gpi     setf gnuplot
+    *.gs      setf grads
+    *.gretl   setf gretl
+    *.groovy  setf groovy
+    *.gsp     setf gsp
+    */etc/group
+              setf group
+    */etc/group-
+              setf group
+    */etc/group.edit
+              setf group
+    */etc/gshadow
+              setf group
+    */etc/gshadow-
+              setf group
+    */etc/gshadow.edit
+              setf group
+    */var/backups/group.bak
+              setf group
+    */var/backups/gshadow.bak
+              setf group
+    .gtkrc    setf gtkrc
+    gtkrc     setf gtkrc
+    *.haml    setf haml
+    *.hsc     setf hamster
+    *.hsm     setf hamster
+    *.hs      setf haskell
+    *.hs-boot setf haskell
+    *.lhs     setf lhaskell
+    *.chs     setf chaskell
+    *.ht      setf haste
+    *.htpp    setf hastepreproc
+    *.vc      setf hercules
+    *.ev      setf hercules
+    *.rs      setf hercules
+    *.sum     setf hercules
+    *.errsum  setf hercules
+    *.hex     setf hex
+    *.h32     setf hex
+    *.t.html  setf tilde
+    *.html    call s:FThtml()
+    *.htm     call s:FThtml()
+    *.shtml   call s:FThtml()
+    *.stm     call s:FThtml()
+    *.erb     setf eruby
+    *.rhtml   setf eruby
+    *.html.m4 setf htmlm4
+    *.tmpl    setf htmlcheetah
+    */etc/host.conf
+              setf hostconf
+    */etc/hosts.allow
+              setf hostsaccess
+    */etc/hosts.deny
+              setf hostsaccess
+    *.hb      setf hb
+    *.icn     setf icon
+    *.idl     call s:FTidl()
+    *.odl     setf msidl
+    *.mof     setf msidl
+    */.icewm/menu
+              setf icemenu
+    .indent.pro
+              setf indent
+    indent.pro
+              call s:ProtoCheck('indent')
+    *.pro     call s:ProtoCheck('idlang')
+    indentrc  setf indent
+    *.inf     setf inform
+    *.INF     setf inform
+    */etc/initng/**/*.i
+              setf initng
+    *.ii      setf initng
+    ipf.conf  setf ipfilter
+    ipf6.conf setf ipfilter
+    ipf.rules setf ipfilter
+    *.4gl     setf fgl
+    *.4gh     setf fgl
+    *.m4gl    setf fgl
+    *.ini     setf dosini
+    inittab   setf inittab
+    *.iss     setf iss
+    *.jal     setf jal
+    *.JAL     setf jal
+    *.jpl     setf jam
+    *.jpr     setf jam
+    *.java    setf java
+    *.jav     setf java
+    *.jj      setf javacc
+    *.jjt     setf javacc
+    *.js      setf javascript
+    *.javascript
+              setf javascript
+    *.es      setf javascript
+    *.jsx     setf javascript
+    *.jsp     setf jsp
+    *.properties
+              setf jproperties
+    *.properties_??
+              setf jproperties
+    *.properties_??_??
+              setf jproperties
+    *.properties_??_??_*
+              call s:StarSetf('jproperties')
+    *.clp     setf jess
+    *.jgr     setf jgraph
+    *.jov     setf jovial
+    *.j73     setf jovial
+    *.jovial  setf jovial
+    *.kix     setf kix
+    *.k       setf kwt
+    *.ks      setf kscript
+    Kconfig   setf kconfig
+    Kconfig.debug
+              setf kconfig
+    *.ace     setf lace
+    *.ACE     setf lace
+    *.latte   setf latte
+    *.lte     setf latte
+    */etc/limits
+              setf limits
+    */etc/*limits.conf
+              setf limits
+    */etc/*limits.d/*.conf
+              setf limits
+    *.sig     setf lprolog
+    *.ldif    setf ldif
+    *.ld      setf ld
+    *.lex     setf lex
+    *.l       setf lex
+    */etc/libao.conf
+              setf libao
+    */.libao  setf libao
+    */etc/sensors.conf
+              setf sensors
+    */etc/sensors3.conf
+              setf sensors
+    lftp.conf setf lftp
+    .lftprc   setf lftp
+    *lftp/rc  setf lftp
+    *.ll      setf lifelines
+    lilo.conf setf lilo
+    *.lsp     setf lisp
+    *.lisp    setf lisp
+    *.el      setf lisp
+    *.cl      setf lisp
+    *.jl      setf lisp
+    .emacs    setf lisp
+    .sawfishrc
+              setf lisp
+    sbclrc    setf lisp
+    .sbclrc   setf lisp
+    *.liquid  setf liquid
+    *.lite    setf lite
+    *.lt      setf lite
+    */LiteStep/*/*.rc
+              setf litestep
+    */etc/login.access
+              setf loginaccess
+    */etc/login.defs
+              setf logindefs
+    *.lgt     setf logtalk
+    *.lot     setf lotos
+    *.lotos   setf lotos
+    *.lou     setf lout
+    *.lout    setf lout
+    *.lua     setf lua
+    *.lsl     setf lsl
+    *.lss     setf lss
+    *.m4      if expand("<afile>") !~? 'html.m4$\|fvwm2rc' | setf m4 | endif
+    *.mgp     setf mgp
+    snd.\d\+  setf mail
+    .letter   setf mail
+    .letter.\d\+
+              setf mail
+    .followup setf mail
+    .article  setf mail
+    .article.\d\+
+              setf mail
+    pico.\d\+ setf mail
+    mutt{ng,}-*-\w\+
+              setf mail
+    mutt[[:alnum:]_-]\{6\}
+              setf mail
+    ae\d\+.txt
+              setf mail
+    /tmp/SLRN[0-9A-Z.]\+
+              setf mail
+    *.eml     setf mail
+    */etc/mail/aliases
+              setf mailaliases
+    */etc/aliases
+              setf mailaliases
+    .mailcap  setf mailcap
+    mailcap   setf mailcap
+    *[mM]akefile
+              setf make
+    *.mk      setf make
+    *.mak     setf make
+    *.dsp     setf make
+    *.ist     setf ist
+    *.mst     setf ist
+    *.man     setf man
+    */etc/man.conf
+              setf manconf
+    man.config
+              setf manconf
+    *.mv      setf maple
+    *.mpl     setf maple
+    *.mws     setf maple
+    *.map     setf map
+    *.markdown
+              setf markdown
+    *.mdown   setf markdown
+    *.mkd     setf markdown
+    *.mkdn    setf markdown
+    README.md setf markdown
+    *.mason   setf mason
+    *.mhtml   setf mason
+    *.m       call s:FTm()
+    *.nb      setf mma
+    *.mel     setf mel
+    *.hgrc    setf cfg
+    *hgrc     setf cfg
+    */log/{auth,cron,daemon,debug,kern,lpr,mail,messages,news/news,syslog,user}{,.log,.err,.info,.warn,.crit,.notice}{,.[0-9]*,-[0-9]*}
+              setf messages
+    *.mf      setf mf
+    *.mp      setf mp
+    *.mgl     setf mgl
+    *.mms     call s:FTmms()
+    *.mmp     setf mmp
+    *.mod     if getline(1) =~ '\<module\>' |   setf lprolog | else |   setf modsim3 | endif
+    *.m2      setf modula2
+    *.DEF     setf modula2
+    *.MOD     setf modula2
+    *.md      setf modula2
+    *.mi      setf modula2
+    *.[mi][3g]
+              setf modula3
+    *.isc     setf monk
+    *.monk    setf monk
+    *.ssc     setf monk
+    *.tsc     setf monk
+    *.moo     setf moo
+    */etc/modules.conf
+              setf modconf
+    */etc/modules
+              setf modconf
+    */etc/conf.modules
+              setf modconf
+    mplayer.conf
+              setf mplayerconf
+    */.mplayer/config
+              setf mplayerconf
+    *.s19     setf srec
+    *.s28     setf srec
+    *.s37     setf srec
+    mrxvtrc   setf mrxvtrc
+    .mrxvtrc  setf mrxvtrc
+    *.msql    setf msql
+    *.mysql   setf mysql
+    */etc/Muttrc.d/*
+              call s:StarSetf('muttrc')
+    *.rc      setf rc
+    *.mu      setf mupad
+    *.mush    setf mush
+    Mutt{ng,}rc
+              setf muttrc
+    */etc/nanorc
+              setf nanorc
+    .nanorc   setf nanorc
+    *.NS[ACGLMNPS]
+              setf natural
+    .netrc    setf netrc
+    *.ncf     setf ncf
+    *.me      if expand("<afile>") != "read.me" && expand("<afile>") != "click.me" |   setf nroff | endif
+    *.tr      setf nroff
+    *.nr      setf nroff
+    *.roff    setf nroff
+    *.tmac    setf nroff
+    *.mom     setf nroff
+    *.[1-9]   call s:FTnroff()
+    *.mm      call s:FTmm()
+    *.nqc     setf nqc
+    *.nsi     setf nsis
+    *.ml      setf ocaml
+    *.mli     setf ocaml
+    *.mll     setf ocaml
+    *.mly     setf ocaml
+    *.occ     setf occam
+    *.xom     setf omnimark
+    *.xin     setf omnimark
+    *.or      setf openroad
+    *.[Oo][Pp][Ll]
+              setf opl
+    *.ora     setf ora
+    pf.conf   setf pf
+    */etc/pam.conf
+              setf pamconf
+    *.papp    setf papp
+    *.pxml    setf papp
+    *.pxsl    setf papp
+    */etc/passwd
+              setf passwd
+    */etc/passwd-
+              setf passwd
+    */etc/passwd.edit
+              setf passwd
+    */etc/shadow
+              setf passwd
+    */etc/shadow-
+              setf passwd
+    */etc/shadow.edit
+              setf passwd
+    */var/backups/passwd.bak
+              setf passwd
+    */var/backups/shadow.bak
+              setf passwd
+    *.pas     setf pascal
+    *.dpr     setf pascal
+    *.pdf     setf pdf
+    *.pl      call s:FTpl()
+    *.plx     setf perl
+    *.al      setf perl
+    *.p6      setf perl6
+    *.pm6     setf perl6
+    *.pm      if getline(1) =~ "XPM2" |   setf xpm2 | elseif getline(1) =~ "XPM" |   setf xpm | else |   setf perl | endif
+    *.pod     setf pod
+    *.php     setf php
+    *.php\d   setf php
+    *.phtml   setf php
+    *.ctp     setf php
+    *.pike    setf pike
+    *.lpc     setf pike
+    *.ulpc    setf pike
+    *.pmod    setf pike
+    */etc/pinforc
+              setf pinfo
+    */.pinforc
+              setf pinfo
+    *.rcp     setf pilrc
+    .pinerc   setf pine
+    pinerc    setf pine
+    .pinercex setf pine
+    pinercex  setf pine
+    *.plm     setf plm
+    *.p36     setf plm
+    *.pac     setf plm
+    *.pls     setf plsql
+    *.plsql   setf plsql
+    *.plp     setf plp
+    *.po      setf po
+    *.pot     setf po
+    main.cf   setf pfmain
+    *.ps      setf postscr
+    *.pfa     setf postscr
+    *.afm     setf postscr
+    *.eps     setf postscr
+    *.epsf    setf postscr
+    *.epsi    setf postscr
+    *.ai      setf postscr
+    *.ppd     setf ppd
+    *.pov     setf pov
+    .povrayrc setf povini
+    *.inc     call s:FTinc()
+    *printcap let b:ptcap_type = "print" | setf ptcap
+    *termcap  let b:ptcap_type = "term" | setf ptcap
+    *.g       setf pccts
+    *.it      setf ppwiz
+    *.ih      setf ppwiz
+    *.obj     setf obj
+    *.pc      setf proc
+    *.action  setf privoxy
+    .procmail setf procmail
+    .procmailrc
+              setf procmail
+    *.w       call s:FTprogress_cweb()
+    *.i       call s:FTprogress_asm()
+    *.p       call s:FTprogress_pascal()
+    *.psf     setf psf
+    INDEX     if getline(1) =~ '^\s*\(distribution\|installed_software\|root\|bundle\|product\)\s*$' |   setf psf | endif
+    INFO      if getline(1) =~ '^\s*\(distribution\|installed_software\|root\|bundle\|product\)\s*$' |   setf psf | endif
+    *.pdb     setf prolog
+    *.pml     setf promela
+    */etc/protocols
+              setf protocols
+    *.pyx     setf pyrex
+    *.pxd     setf pyrex
+    *.py      setf python
+    *.pyw     setf python
+    *.ptl     setf python
+    *.rad     setf radiance
+    *.mat     setf radiance
+    .ratpoisonrc
+              setf ratpoison
+    ratpoisonrc
+              setf ratpoison
+    *\,v      setf rcs
+    .inputrc  setf readline
+    inputrc   setf readline
+    *.reg     if getline(1) =~? '^REGEDIT[0-9]*\s*$\|^Windows Registry Editor Version \d*\.\d*\s*$' | setf registry | endif
+    *.rib     setf rib
+    *.rexx    setf rexx
+    *.rex     setf rexx
+    *.jrexx   setf rexx
+    *.rxj     setf rexx
+    *.orx     setf rexx
+    *.s       setf r
+    *.rd      setf rhelp
+    *.rnw     setf rnoweb
+    *.snw     setf rnoweb
+    *.r       call s:FTr()
+    *.R       call s:FTr()
+    .reminders
+              setf remind
+    *.remind  setf remind
+    *.rem     setf remind
+    resolv.conf
+              setf resolv
+    *.rnc     setf rnc
+    *.rpl     setf rpl
+    robots.txt
+              setf robots
+    *.x       setf rpcgen
+    *.rst     setf rst
+    *.rtf     setf rtf
+    .irbrc    setf ruby
+    irbrc     setf ruby
+    *.rb      setf ruby
+    *.rbw     setf ruby
+    *.gemspec setf ruby
+    *.ru      setf ruby
+    Gemfile   setf ruby
+    *.builder setf ruby
+    *.rxml    setf ruby
+    *.rjs     setf ruby
+    [rR]antfile
+              setf ruby
+    *.rant    setf ruby
+    [rR]akefile
+              setf ruby
+    *.rake    setf ruby
+    *.sl      setf slang
+    smb.conf  setf samba
+    *.sas     setf sas
+    *.sass    setf sass
+    *.sa      setf sather
+    *.sci     setf scilab
+    *.sce     setf scilab
+    *.scss    setf scss
+    *.sd      setf sd
+    *.sdl     setf sdl
+    *.pr      setf sdl
+    *.sed     setf sed
+    *.siv     setf sieve
+    sendmail.cf
+              setf sm
+    *.mc      call s:McSetf()
+    */etc/services
+              setf services
+    */etc/slp.conf
+              setf slpconf
+    */etc/slp.reg
+              setf slpreg
+    */etc/slp.spi
+              setf slpspi
+    */etc/serial.conf
+              setf setserial
+    *.sgm     if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'linuxdoc' |   setf sgmllnx | elseif getline(1) =~ '<!DOCTYPE.*DocBook' || getline(2) =~ '<!DOCTYPE.*DocBook' |   let b:docbk_type="sgml" |   setf docbk | else |   setf sgml | endif
+    *.sgml    if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'linuxdoc' |   setf sgmllnx | elseif getline(1) =~ '<!DOCTYPE.*DocBook' || getline(2) =~ '<!DOCTYPE.*DocBook' |   let b:docbk_type="sgml" |   setf docbk | else |   setf sgml | endif
+    *.decl    if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    *.dcl     if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    *.dec     if getline(1).getline(2).getline(3) =~? '^<!SGML' |    setf sgmldecl | endif
+    catalog   setf catalog
+    sgml.catalog*
+              call s:StarSetf('catalog')
+    .bashrc*  call SetFileTypeSH("bash")
+    bashrc    call SetFileTypeSH("bash")
+    bash.bashrc
+              call SetFileTypeSH("bash")
+    .bash_profile*
+              call SetFileTypeSH("bash")
+    .bash_logout*
+              call SetFileTypeSH("bash")
+    *.bash    call SetFileTypeSH("bash")
+    *.ebuild  call SetFileTypeSH("bash")
+    .kshrc*   call SetFileTypeSH("ksh")
+    *.ksh     call SetFileTypeSH("ksh")
+    */etc/profile
+              call SetFileTypeSH(getline(1))
+    .profile* call SetFileTypeSH(getline(1))
+    *.sh      call SetFileTypeSH(getline(1))
+    *.env     call SetFileTypeSH(getline(1))
+    .tcshrc*  call SetFileTypeShell("tcsh")
+    *.tcsh    call SetFileTypeShell("tcsh")
+    tcsh.tcshrc
+              call SetFileTypeShell("tcsh")
+    tcsh.login
+              call SetFileTypeShell("tcsh")
+    .login*   call s:CSH()
+    .cshrc*   call s:CSH()
+    csh.cshrc call s:CSH()
+    csh.login call s:CSH()
+    csh.logout
+              call s:CSH()
+    *.csh     call s:CSH()
+    .alias    call s:CSH()
+    .zprofile setf zsh
+    */etc/zprofile
+              setf zsh
+    .zfbfmarks
+              setf zsh
+    .zsh*     call s:StarSetf('zsh')
+    .zlog*    call s:StarSetf('zsh')
+    .zcompdump*
+              call s:StarSetf('zsh')
+    *.zsh     setf zsh
+    *.scm     setf scheme
+    *.ss      setf scheme
+    .screenrc setf screen
+    screenrc  setf screen
+    *.sim     setf simula
+    *.sin     setf sinda
+    *.s85     setf sinda
+    *.sst     setf sisu
+    *.ssm     setf sisu
+    *.ssi     setf sisu
+    *.-sst    setf sisu
+    *._sst    setf sisu
+    *.sst.meta
+              setf sisu
+    *.-sst.meta
+              setf sisu
+    *._sst.meta
+              setf sisu
+    *.il      setf skill
+    *.ils     setf skill
+    *.cdf     setf skill
+    .slrnrc   setf slrnrc
+    *.score   setf slrnsc
+    *.st      setf st
+    *.cls     if getline(1) =~ '^%' |  setf tex | else |  setf st | endif
+    *.tpl     setf smarty
+    *.smil    if getline(1) =~ '<?\s*xml.*?>' |   setf xml | else |   setf smil | endif
+    *.smi     if getline(1) =~ '\<smil\>' |   setf smil | else |   setf mib | endif
+    *.smt     setf smith
+    *.smith   setf smith
+    *.sno     setf snobol4
+    *.spt     setf snobol4
+    *.mib     setf mib
+    *.my      setf mib
+    *.hog     setf hog
+    snort.conf
+              setf hog
+    vision.conf
+              setf hog
+    *.rules   call s:FTRules()
+    *.spec    setf spec
+    *.speedup setf spup
+    *.spdata  setf spup
+    *.spd     setf spup
+    *.ice     setf slice
+    *.sp      setf spice
+    *.spice   setf spice
+    *.spy     setf spyce
+    *.spi     setf spyce
+    squid.conf
+              setf squid
+    *.tyb     setf sql
+    *.typ     setf sql
+    *.tyc     setf sql
+    *.pkb     setf sql
+    *.pks     setf sql
+    *.sql     call s:SQL()
+    *.sqlj    setf sqlj
+    *.sqr     setf sqr
+    *.sqi     setf sqr
+    ssh_config
+              setf sshconfig
+    */.ssh/config
+              setf sshconfig
+    sshd_config
+              setf sshdconfig
+    *.ado     setf stata
+    *.class   setf stata
+    *.do      setf stata
+    *.imata   setf stata
+    *.mata    setf stata
+    *.hlp     setf smcl
+    *.ihlp    setf smcl
+    *.smcl    setf smcl
+    *.stp     setf stp
+    *.sml     setf sml
+    *.cm      setf voscm
+    */etc/sysctl.conf
+              setf sysctl
+    */etc/sysctl.d/*.conf
+              setf sysctl
+    *.sdc     setf sdc
+    */etc/sudoers
+              setf sudoers
+    sudoers.tmp
+              setf sudoers
+    *.svg     setf svg
+    *.t       if !s:FTnroff() && !s:FTperl() | setf tads | endif
+    tags      setf tags
+    *.tak     setf tak
+    {pending,completed,undo}.data
+              setf taskdata
+    *.task    setf taskedit
+    *.tcl     setf tcl
+    *.tk      setf tcl
+    *.itcl    setf tcl
+    *.itk     setf tcl
+    *.jacl    setf tcl
+    *.tli     setf tli
+    *.slt     setf tsalt
+    *.ti      setf terminfo
+    *.latex   setf tex
+    *.sty     setf tex
+    *.dtx     setf tex
+    *.ltx     setf tex
+    *.bbl     setf tex
+    *.tex     call s:FTtex()
+    tex/context/*/*.tex
+              setf context
+    *.mkii    setf context
+    *.mkiv    setf context
+    *.texinfo setf texinfo
+    *.texi    setf texinfo
+    *.txi     setf texinfo
+    texmf.cnf setf texmf
+    .tidyrc   setf tidy
+    tidyrc    setf tidy
+    *.tf      setf tf
+    .tfrc     setf tf
+    tfrc      setf tf
+    *.tpp     setf tpp
+    *.treetop setf treetop
+    trustees.conf
+              setf trustees
+    *.tssgm   setf tssgm
+    *.tssop   setf tssop
+    *.tsscl   setf tsscl
+    *.uit     setf uil
+    *.uil     setf uil
+    */etc/udev/udev.conf
+              setf udevconf
+    */etc/udev/permissions.d/*.permissions
+              setf udevperm
+    */etc/udev/cdsymlinks.conf
+              setf sh
+    *.uc      setf uc
+    */etc/updatedb.conf
+              setf updatedb
+    */etc/init/*.conf
+              setf upstart
+    */.init/*.conf
+              setf upstart
+    */etc/init/*.override
+              setf upstart
+    */.init/*.override
+              setf upstart
+    *.vr      setf vera
+    *.vri     setf vera
+    *.vrh     setf vera
+    *.v       setf verilog
+    *.va      setf verilogams
+    *.vams    setf verilogams
+    *.hdl     setf vhdl
+    *.vhd     setf vhdl
+    *.vhdl    setf vhdl
+    *.vbe     setf vhdl
+    *.vst     setf vhdl
+    *.vhdl_[0-9]*
+              call s:StarSetf('vhdl')
+    *.vim     setf vim
+    *.vba     setf vim
+    .exrc     setf vim
+    _exrc     setf vim
+    .viminfo  setf viminfo
+    _viminfo  setf viminfo
+    *.hw      if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.module  if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.pkg     if getline(1) =~ '<?php' |   setf php | else |   setf virata | endif
+    *.frm     call s:FTVB("form")
+    *.sba     setf vb
+    vgrindefs setf vgrindefs
+    *.wrl     setf vrml
+    *.wm      setf webmacro
+    .wgetrc   setf wget
+    wgetrc    setf wget
+    *.wml     setf wml
+    *.wbt     setf winbatch
+    *.wsml    setf wsml
+    wvdial.conf
+              setf wvdial
+    .wvdialrc setf wvdial
+    .cvsrc    setf cvsrc
+    cvs\d\+   setf cvs
+    *.web     if getline(1)[0].getline(2)[0].getline(3)[0].getline(4)[0].getline(5)[0] =~ "%" |   setf web | else |   setf winbatch | endif
+    *.ws[fc]  setf wsh
+    *.xhtml   setf xhtml
+    *.xht     setf xhtml
+    XF86Config
+              if getline(1) =~ '\<XConfigurator\>' |   let b:xf86conf_xfree86_version = 3 | endif | setf xf86conf
+    */xorg.conf.d/*.conf
+              let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    xorg.conf let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    xorg.conf-4
+              let b:xf86conf_xfree86_version = 4 | setf xf86conf
+    */etc/xinetd.conf
+              setf xinetd
+    *.xs      setf xs
+    .Xdefaults
+              setf xdefaults
+    .Xpdefaults
+              setf xdefaults
+    .Xresources
+              setf xdefaults
+    xdm-config
+              setf xdefaults
+    *.ad      setf xdefaults
+    *.msc     setf xmath
+    *.msf     setf xmath
+    *.ms      if !s:FTnroff() | setf xmath | endif
+    *.xml     call s:FTxml()
+    *.xmi     setf xml
+    *.csproj  setf xml
+    *.csproj.user
+              setf xml
+    *.ts      setf xml
+    *.ui      setf xml
+    *.tpm     setf xml
+    */etc/xdg/menus/*.menu
+              setf xml
+    fglrxrc   setf xml
+    *.xlf     setf xml
+    *.xliff   setf xml
+    *Xmodmap  setf xmodmap
+    *.xq      setf xquery
+    *.xql     setf xquery
+    *.xqm     setf xquery
+    *.xquery  setf xquery
+    *.xqy     setf xquery
+    *.xsd     setf xsd
+    *.xsl     setf xslt
+    *.xslt    setf xslt
+    *.yy      setf yacc
+    *.y       call s:FTy()
+    *.yaml    setf yaml
+    *.yml     setf yaml
+    *.dtml    call s:FThtml()
+    *.pt      call s:FThtml()
+    *.cpt     call s:FThtml()
+    *.zsql    call s:SQL()
+    *.z8a     setf z8a
+    *         if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+    access.conf*
+              call s:StarSetf('apache')
+    apache.conf*
+              call s:StarSetf('apache')
+    apache2.conf*
+              call s:StarSetf('apache')
+    httpd.conf*
+              call s:StarSetf('apache')
+    srm.conf* call s:StarSetf('apache')
+    */etc/apache2/*.conf*
+              call s:StarSetf('apache')
+    */etc/apache2/conf.*/*
+              call s:StarSetf('apache')
+    */etc/apache2/mods-*/*
+              call s:StarSetf('apache')
+    */etc/apache2/sites-*/*
+              call s:StarSetf('apache')
+    */etc/httpd/conf.d/*.conf*
+              call s:StarSetf('apache')
+    *asterisk/*.conf*
+              call s:StarSetf('asterisk')
+    *asterisk*/*voicemail.conf*
+              call s:StarSetf('asteriskvm')
+    bzr_log.* setf bzr
+    */named/db.*
+              call s:StarSetf('bindzone')
+    */bind/db.*
+              call s:StarSetf('bindzone')
+    */.calendar/*
+              call s:StarSetf('calendar')
+    */share/calendar/*/calendar.*
+              call s:StarSetf('calendar')
+    */share/calendar/calendar.*
+              call s:StarSetf('calendar')
+    [cC]hange[lL]og*
+              if getline(1) =~ '; urgency='|  call s:StarSetf('debchangelog')|else|  call s:StarSetf('changelog')|endif
+    crontab   call s:StarSetf('crontab')
+    crontab.* call s:StarSetf('crontab')
+    */etc/cron.d/*
+              call s:StarSetf('crontab')
+    */etc/dnsmasq.d/*
+              call s:StarSetf('dnsmasq')
+    drac.*    call s:StarSetf('dracula')
+    */.fvwm/* call s:StarSetf('fvwm')
+    *fvwmrc*  let b:fvwm_version = 1 | call s:StarSetf('fvwm')
+    *fvwm95*.hook
+              let b:fvwm_version = 1 | call s:StarSetf('fvwm')
+    *fvwm2rc* if expand("<afile>:e") == "m4"|  call s:StarSetf('fvwm2m4')|else|  let b:fvwm_version = 2 | call s:StarSetf('fvwm')|endif
+    */tmp/lltmp*
+              call s:StarSetf('gedcom')
+    .gtkrc*   call s:StarSetf('gtkrc')
+    gtkrc*    call s:StarSetf('gtkrc')
+    Prl*.*    call s:StarSetf('jam')
+    JAM*.*    call s:StarSetf('jam')
+    *jarg*    if getline(1).getline(2).getline(3).getline(4).getline(5) =~? 'THIS IS THE JARGON FILE'|  call s:StarSetf('jargon')|endif
+    Kconfig.* call s:StarSetf('kconfig')
+    lilo.conf*
+              call s:StarSetf('lilo')
+    */etc/logcheck/*.d*/*
+              call s:StarSetf('logcheck')
+    [mM]akefile*
+              call s:StarSetf('make')
+    [rR]akefile*
+              call s:StarSetf('ruby')
+    mutt[[:alnum:]._-]\{6\}
+              setf mail
+    */etc/modutils/*
+              if executable(expand("<afile>")) != 1|  call s:StarSetf('modconf')|endif
+    */etc/modprobe.*
+              call s:StarSetf('modconf')
+    .mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    */.mutt{ng,}/mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    Mutt{ng,}rc*
+              call s:StarSetf('muttrc')
+    tmac.*    call s:StarSetf('nroff')
+    */etc/pam.d/*
+              call s:StarSetf('pamconf')
+    *printcap*
+              if !did_filetype()|  let b:ptcap_type = "print" | call s:StarSetf('ptcap')|endif
+    *termcap* if !did_filetype()|  let b:ptcap_type = "term" | call s:StarSetf('ptcap')|endif
+    .reminders*
+              call s:StarSetf('remind')
+    *vimrc*   call s:StarSetf('vim')
+    svn-commit*.tmp
+              setf svn
+    Xresources*
+              call s:StarSetf('xdefaults')
+    */app-defaults/*
+              call s:StarSetf('xdefaults')
+    */Xresources/*
+              call s:StarSetf('xdefaults')
+    XF86Config-4*
+              let b:xf86conf_xfree86_version = 4 | call s:StarSetf('xf86conf')
+    XF86Config*
+              if getline(1) =~ '\<XConfigurator\>'|  let b:xf86conf_xfree86_version = 3|endif|call s:StarSetf('xf86conf')
+    *xmodmap* call s:StarSetf('xmodmap')
+    */etc/xinetd.d/*
+              call s:StarSetf('xinetd')
+    zsh*      call s:StarSetf('zsh')
+    zlog*     call s:StarSetf('zsh')
+    *         if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (getline(1) =~ '^#' || getline(2) =~ '^#' || getline(3) =~ '^#'^I|| getline(4) =~ '^#' || getline(5) =~ '^#') |   setf conf | endif
+repeatPlugin  BufReadPre
+    *         let g:repeat_tick = (g:repeat_tick == b:changedtick || g:repeat_tick == 0) ? 0 : -1
+repeatPlugin  BufWritePost
+    *         if g:repeat_tick == 0|let g:repeat_tick = b:changedtick|endif
+BufWritePost
+    vimrc     source ~/.vimrc"
+repeatPlugin  BufWrite
+    *         let g:repeat_tick = (g:repeat_tick == b:changedtick || g:repeat_tick == 0) ? 0 : -1
+syntaxset  FileType
+    *         exe "set syntax=" . expand("<amatch>")
+FileType
+    python    set omnifunc=pythoncomplete#Complete
+    javascript
+              set omnifunc=javascriptcomplete#CompleteJS
+    html      set omnifunc=htmlcomplete#CompleteTags
+    css       set omnifunc=csscomplete#CompleteC
+FocusLost
+    *         silent! wa!
+InsertEnter
+    *         call InsertStatuslineColor(v:insertmode)
+InsertLeave
+    *         call InsertLeaveActions()
+filetypedetect  StdinReadPost
+    *         if !did_filetype() | runtime! scripts.vim | endif
+              if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (getline(1) =~ '^#' || getline(2) =~ '^#' || getline(3) =~ '^#'^I|| getline(4) =~ '^#' || getline(5) =~ '^#') |   setf conf | endif
+Syntax
+    *         call s:SynSet()
+    c         if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    cpp       if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    cs        if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    idl       if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+PluginSession  VimEnter
+    *         call xolox#session#auto_load()
+PluginSession  VimLeavePre
+    *         call xolox#session#auto_save()
+              call xolox#session#auto_unlock()
+matchparen  WinEnter
+    *         call s:Highlight_Matching_Pair()
+SourceCmd
+    *.vba.gz  if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vba.bz2 if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vba.zip if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vba.xz  if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vba     if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|call vimball#Vimball(1)|close|else|call vimball#Vimball(1)|endif
+    *.vmb.gz  if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vmb.bz2 if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vmb.zip if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vmb.xz  if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|endif|call vimball#Decompress(expand("<amatch>"))|so %|if expand("%")!=expand("<afile>")|close|endif
+    *.vmb     if expand("%")!=expand("<afile>") | exe "1sp" fnameescape(expand("<afile>"))|call vimball#Vimball(1)|close|else|call vimball#Vimball(1)|endif
+SpellFileMissing
+    *         call spellfile#LoadFile(expand('<amatch>'))
+matchparen  CursorMoved
+    *         call s:Highlight_Matching_Pair()
+matchparen  CursorMovedI
+    *         call s:Highlight_Matching_Pair()
+
+--- Normal/Visual mode mappings ---
+
+x  <C-A>       * <C-C>ggVG
+s  <C-A>       * <C-C>gggH<C-O>G
+o  <C-A>       * <C-C>gggH<C-O>G
+n  <C-A>       * gggH<C-O>G
+n  <C-C>         :Bclose!<CR>
+v  <C-C>       * "+y
+v  <C-E>       * 3<C-E>
+n  <C-E>       * 3<C-E>
+n  <C-H>         <<
+v  <Tab>         >gv
+n  <Tab>         <C-W>w
+n  <NL>        * :<C-U>call MoveLineDown()<CR>
+n  <C-K>       * :<C-U>call MoveLineUp()<CR>
+n  <C-L>         >>
+   <CR>        * o <BS><Esc>
+n  <C-N>         :NERDTreeToggle<CR>
+   <C-O>         ,oo<Space>
+n  <C-P>         cw<Esc>"0p
+   <C-Q>       * <C-V>
+n  <C-R>       * :<C-U>call <SNR>14_wrap("\<C-R>",v:count)<CR>
+v  <C-S>       * <C-C>:update!<CR>
+no <C-S>       * :update!<CR>
+v  <C-V>       & "-c<Esc>:call paste#Paste()<CR>
+no <C-V>         "+gP
+n  <C-X>         Ydd
+v  <C-X>       * "+x
+v  <C-Y>       * 3<C-Y>
+n  <C-Y>       * 3<C-Y>
+   <C-Z>       * u
+nv <Esc>[Z       <S-Tab>
+   <Esc>P      * P'[v']="
+   <Esc>p      * p'[v']=
+v  ,z            <Esc>:%s/<C-R>=GetVisual()<CR>/
+   ,p          * :cprevious<CR>
+   ,n          * :cnext<CR>
+   ,m          * :CtrlPBuffer<CR>
+   ,o            \oo
+   ,b          * :CommandTBuffer<CR>
+   ,f            :CommandTFlush<CR>
+   ,r            :CommandTFlush<CR>
+n  .           * :<C-U>call <SNR>14_repeat(v:count)<CR>
+   ;           * :
+n  E             :w<CR>:ConqueTermSplit ipython <CR>%run helpers/pruebas.py <CR>
+n  U           * :<C-U>call <SNR>14_wrap('U',v:count)<CR>
+n  V             g^vg$h
+   \h          * :!tidy -q -i -xml --force-output 1 --char-encoding utf8<CR>
+n  \jj         * :call g:Jsbeautify()<CR>
+   \<F2>         :call HexHighlight()<CR>
+n  gW          * "_yiw?\w\+\_W\+\%#<CR>:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-O><C-L>
+n  gw          * "_yiw:s/\(\%#\w\+\)\(\W\+\)\(\w\+\)/\3\2\1/<CR><C-O><C-L>
+n  u           * :<C-U>call <SNR>14_wrap('u',v:count)<CR>
+   <S-F5>        :py EvaluateCurrentRange()
+   <C-S-Tab>     :bcrevious<CR>
+   <C-Tab>       :bnext<CR>
+v  <S-Tab>       <gv
+n  <F7>        * :set ignorecase! ignorecase?<CR>
+n  <BS>          d<Left>
+n  <F4>        * :set invpaste paste?<CR>
+   <F6>          :call ToggleMouse()<CR>
+n  <S-Tab>       <C-W>W
+   <S-F3>        :Rgrep<CR>
+n  <C-Down>      :exe 'set guifont=Monospace\ '.(split(&guifont)[-1]-1)<CR>
+n  <C-Up>        :exe 'set guifont=Monospace\ '.(split(&guifont)[-1]+1)<CR>
+   <F3>          :execute "vimgrep /" . expand("<cword>") . "/j **" | cw
+   <M-Down>      }
+   <D-Down>    * <C-End>
+   <M-Up>        {
+   <D-Up>      * <C-Home>
+   <M-Right>   * <C-Right>
+   <D-Right>   * <End>
+   <M-Left>    * <C-Left>
+   <D-Left>    * <Home>
+v  <S-Insert>    <C-V>
+no <S-Insert>    "+gP
+v  <C-Insert>  * "+y
+v  <S-Del>     * "+x
+v  <BS>        * d
+   ­           * g^
+   ½           * g$
+               :bd!<CR>
+
+--- Insert/Command-line mode mappings ---
+
+i  X           * <C-X><C-O>
+i  <S-Tab>       <Esc><<i
+i  <S-Del>       <Esc>dawi
+i  <Up>        * <C-O>gk
+i  <Down>      * <C-O>gj
+i  <D-BS>        <C-U>
+i  <M-BS>        <C-W>
+i  <M-Down>      <C-O>}
+i  <D-Down>    * <C-End>
+i  <M-Up>        <C-O>{
+i  <D-Up>      * <C-Home>
+!  <M-Right>   * <C-Right>
+!  <D-Right>   * <End>
+!  <M-Left>    * <C-Left>
+!  <D-Left>    * <Home>
+i  <S-Insert>    <C-V>
+c  <S-Insert>    <C-R>+
+i  <BS>        * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_Backspace()<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  ­             <Esc>g^i
+i  ½             <Esc>g$i
+c  <C-A>       * <C-C>gggH<C-O>G
+i  <C-A>       * <C-O>gg<C-O>gH<C-O>G
+i  <C-C>       * <C-O>:call InsertLeaveActions()<CR><C-C>
+i  <C-H>         <Left>
+i  <Tab>         neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-N>" : "\<Tab>"
+i  <NL>          <Down>
+i  <C-K>         <Up>
+i  <C-L>         <Right>
+i  <C-S>       * <C-O>:update!<CR>
+i  <C-V>       & x<BS><Esc>:call paste#Paste()<CR>gi
+c  <C-V>         <C-R>+
+i  <C-Z>       * <C-O>u
+i  "           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_CheckPair("\"")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  '           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_CheckPair("'")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  (           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_InsertPair("(")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  )           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_ClosePair(")")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+c  Q             qa!<CR>
+i  [           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_InsertPair("[")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  ]           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_ClosePair("]")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  {           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_InsertPair("{")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+i  }           * <C-R>=<SNR>4_SetVEAll()<CR><C-R>=<SNR>4_ClosePair("}")<CR><C-R>=<SNR>4_RestoreVE()<CR>
+
+--- Abbreviations ---
+
+
+No abbreviation found
+
+--- Highlighting ---
+
+SpecialKey     xxx term=bold ctermfg=238 ctermbg=233 guifg=#45413b guibg=bg
+NonText        xxx term=bold ctermfg=238 ctermbg=233 gui=bold guifg=#45413b guibg=bg
+Directory      xxx term=bold cterm=bold ctermfg=222 gui=bold guifg=#f4cf86
+ErrorMsg       xxx term=standout cterm=bold ctermfg=196 ctermbg=233 gui=bold guifg=#ff2c4b guibg=bg
+IncSearch      xxx term=reverse cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+Search         xxx term=reverse cterm=bold ctermfg=16 ctermbg=221 gui=bold guifg=#000000 guibg=#fade3e
+MoreMsg        xxx term=bold cterm=bold ctermfg=221 gui=bold guifg=#fade3e
+ModeMsg        xxx term=bold cterm=bold ctermfg=222 gui=bold guifg=#f4cf86
+LineNr         xxx term=underline ctermfg=241 ctermbg=233 guifg=#666462 guibg=#1c1b1a
+CursorLineNr   xxx term=bold ctermfg=14 gui=bold guifg=Yellow
+Question       xxx term=standout cterm=bold ctermfg=222 gui=bold guifg=#f4cf86
+StatusLine     xxx term=bold,reverse cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=green
+StatusLineNC   xxx term=reverse cterm=bold ctermfg=15 ctermbg=238 gui=bold guifg=#ffffff guibg=#45413b
+VertSplit      xxx term=reverse ctermfg=245 ctermbg=233 guifg=#998f84 guibg=bg
+Title          xxx term=bold ctermfg=154 gui=bold guifg=#aeee00
+Visual         xxx term=reverse cterm=reverse ctermbg=238 guibg=#45413b
+VisualNOS      xxx term=bold,underline cterm=bold,underline ctermbg=238 gui=bold,underline guibg=#45413b
+WarningMsg     xxx term=standout cterm=bold ctermfg=211 gui=bold guifg=#ff9eb8
+WildMenu       xxx term=standout ctermfg=0 ctermbg=14 guifg=Black guibg=Yellow
+Folded         xxx term=standout ctermfg=241 ctermbg=233 guifg=#666462 guibg=bg
+FoldColumn     xxx term=standout ctermfg=241 ctermbg=233 guifg=#666462 guibg=#1c1b1a
+DiffAdd        xxx term=bold ctermbg=236 guibg=#35322d
+DiffChange     xxx term=bold ctermbg=235 guibg=#242321
+DiffDelete     xxx term=bold ctermfg=16 ctermbg=16 gui=bold guifg=#000000 guibg=#000000
+DiffText       xxx term=reverse cterm=bold ctermfg=15 ctermbg=236 gui=bold guifg=#ffffff guibg=#35322d
+SignColumn     xxx term=standout ctermfg=11 ctermbg=233 guifg=Cyan guibg=#1c1b1a
+Conceal        xxx ctermfg=7 ctermbg=8 guifg=LightGrey guibg=DarkGrey
+SpellBad       xxx term=reverse cterm=undercurl ctermbg=12 gui=undercurl guisp=#fade3e
+SpellCap       xxx term=reverse cterm=bold,undercurl ctermfg=221 ctermbg=233 gui=bold,undercurl guifg=#fade3e guibg=bg guisp=#fade3e
+SpellRare      xxx term=reverse cterm=undercurl ctermbg=13 gui=undercurl guisp=#fade3e
+SpellLocal     xxx term=underline cterm=undercurl ctermbg=11 gui=undercurl guisp=#fade3e
+Pmenu          xxx ctermfg=15 ctermbg=236 guifg=#f8f6f2 guibg=#35322d
+PmenuSel       xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+PmenuSbar      xxx ctermbg=236 guibg=#35322d
+PmenuThumb     xxx ctermfg=252 ctermbg=15 guifg=#d9cec3 guibg=White
+TabLine        xxx term=underline cterm=underline ctermfg=15 ctermbg=8 gui=underline guibg=DarkGrey
+TabLineSel     xxx term=bold cterm=bold gui=bold
+TabLineFill    xxx term=reverse cterm=reverse gui=reverse
+CursorColumn   xxx term=reverse ctermbg=235 guibg=#242321
+CursorLine     xxx term=underline ctermbg=235 guibg=#242321
+ColorColumn    xxx term=reverse ctermbg=235 guibg=#242321
+Cursor         xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+lCursor        xxx guifg=bg guibg=fg
+MatchParen     xxx term=reverse cterm=bold ctermfg=221 ctermbg=235 gui=bold guifg=#fade3e guibg=#242321
+Normal         xxx ctermfg=15 ctermbg=233 guifg=#f8f6f2 guibg=#1c1b1a
+XMLFold        xxx cleared
+XMLCData       xxx cleared
+XMLCommentFold xxx cleared
+Comment        xxx term=bold ctermfg=243 guifg=#857f78
+Constant       xxx term=underline cterm=bold ctermfg=137 gui=bold guifg=#b88853
+Special        xxx term=bold ctermfg=15 guifg=#f8f6f2
+Identifier     xxx term=underline ctermfg=214 guifg=#ffa724
+Statement      xxx term=bold cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+PreProc        xxx term=underline ctermfg=154 guifg=#aeee00
+Type           xxx term=underline ctermfg=211 guifg=#ff9eb8
+Underlined     xxx term=underline cterm=underline ctermfg=15 gui=underline guifg=fg
+Ignore         xxx ctermfg=243 guifg=#857f78
+Error          xxx term=reverse cterm=bold ctermfg=15 ctermbg=196 gui=bold guifg=#ffffff guibg=#ff2c4b
+Todo           xxx term=standout cterm=bold ctermfg=15 ctermbg=233 gui=bold guifg=#ffffff guibg=bg
+String         xxx ctermfg=222 guifg=#f4cf86
+Character      xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+Number         xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+Boolean        xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+Float          xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+Function       xxx ctermfg=214 guifg=#ffa724
+Conditional    xxx cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+Repeat         xxx ctermfg=196 guifg=#ff2c4b
+Label          xxx ctermfg=196 guifg=#ff2c4b
+Operator       xxx ctermfg=196 guifg=#ff2c4b
+Keyword        xxx cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+Exception      xxx cterm=bold ctermfg=154 gui=bold guifg=#aeee00
+Include        xxx links to PreProc
+Define         xxx ctermfg=154 guifg=#aeee00
+Macro          xxx ctermfg=154 guifg=#aeee00
+PreCondit      xxx cterm=bold ctermfg=154 gui=bold guifg=#aeee00
+StorageClass   xxx ctermfg=196 guifg=#ff2c4b
+Structure      xxx ctermfg=196 guifg=#ff2c4b
+Typedef        xxx cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+Tag            xxx cterm=bold gui=bold
+SpecialChar    xxx cterm=bold ctermfg=211 gui=bold guifg=#ff9eb8
+Delimiter      xxx links to Special
+SpecialComment xxx cterm=bold ctermfg=15 ctermbg=233 gui=bold guifg=#ffffff guibg=bg
+Debug          xxx cterm=bold ctermfg=15 gui=bold guifg=#ffffff
+vCursor        xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+iCursor        xxx ctermfg=16 ctermbg=39 guifg=#000000 guibg=#0a9dff
+CtrlPNoEntries xxx cterm=bold ctermfg=15 ctermbg=196 gui=bold guifg=#ffffff guibg=#ff2c4b
+CtrlPMatch     xxx ctermfg=214 ctermbg=233 guifg=#ffa724 guibg=bg
+CtrlPLinePre   xxx ctermfg=238 ctermbg=233 guifg=#45413b guibg=bg
+CtrlPPrtBase   xxx ctermfg=238 ctermbg=233 guifg=#45413b guibg=bg
+CtrlPPrtText   xxx ctermfg=15 ctermbg=233 guifg=#f8f6f2 guibg=bg
+CtrlPPrtCursor xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+CtrlPMode1     xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+CtrlPMode2     xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+CtrlPStats     xxx cterm=bold ctermfg=16 ctermbg=39 gui=bold guifg=#000000 guibg=#0a9dff
+EasyMotionTarget xxx cterm=bold ctermfg=39 ctermbg=233 gui=bold guifg=#0a9dff guibg=bg
+EasyMotionShade xxx ctermfg=238 ctermbg=233 guifg=#45413b guibg=bg
+InterestingWord1 xxx ctermfg=16 ctermbg=214 guifg=#000000 guibg=#ffa724
+InterestingWord2 xxx ctermfg=16 ctermbg=154 guifg=#000000 guibg=#aeee00
+InterestingWord3 xxx ctermfg=16 ctermbg=196 guifg=#000000 guibg=#ff2c4b
+ShowMarksHLl   xxx ctermfg=39 ctermbg=233 guifg=#0a9dff guibg=#1c1b1a
+ShowMarksHLu   xxx ctermfg=39 ctermbg=233 guifg=#0a9dff guibg=#1c1b1a
+ShowMarksHLo   xxx ctermfg=39 ctermbg=233 guifg=#0a9dff guibg=#1c1b1a
+ShowMarksHLm   xxx ctermfg=39 ctermbg=233 guifg=#0a9dff guibg=#1c1b1a
+clojureSpecial xxx ctermfg=196 guifg=#ff2c4b
+clojureDefn    xxx ctermfg=196 guifg=#ff2c4b
+clojureDefMacro xxx ctermfg=196 guifg=#ff2c4b
+clojureDefine  xxx ctermfg=196 guifg=#ff2c4b
+clojureMacro   xxx ctermfg=196 guifg=#ff2c4b
+clojureCond    xxx ctermfg=196 guifg=#ff2c4b
+clojureKeyword xxx ctermfg=214 guifg=#ffa724
+clojureFunc    xxx ctermfg=211 guifg=#ff9eb8
+clojureRepeat  xxx ctermfg=211 guifg=#ff9eb8
+clojureParen0  xxx ctermfg=245 guifg=#998f84
+clojureAnonArg xxx cterm=bold ctermfg=15 gui=bold guifg=#ffffff
+cssColorProp   xxx ctermfg=15 guifg=fg
+cssBoxProp     xxx ctermfg=15 guifg=fg
+cssTextProp    xxx ctermfg=15 guifg=fg
+cssRenderProp  xxx ctermfg=15 guifg=fg
+cssGeneratedContentProp xxx ctermfg=15 guifg=fg
+cssValueLength xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+cssColor       xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+cssBraces      xxx ctermfg=245 guifg=#998f84
+cssIdentifier  xxx cterm=bold ctermfg=214 gui=bold guifg=#ffa724
+cssClassName   xxx ctermfg=214 guifg=#ffa724
+gitDiff        xxx ctermfg=245 guifg=#998f84
+diffRemoved    xxx ctermfg=211 guifg=#ff9eb8
+diffAdded      xxx ctermfg=154 guifg=#aeee00
+diffFile       xxx cterm=bold ctermfg=16 ctermbg=196 gui=bold guifg=#000000 guibg=#ff2c4b
+diffNewFile    xxx cterm=bold ctermfg=16 ctermbg=196 gui=bold guifg=#000000 guibg=#ff2c4b
+diffLine       xxx cterm=bold ctermfg=16 ctermbg=214 gui=bold guifg=#000000 guibg=#ffa724
+diffSubname    xxx ctermfg=214 guifg=#ffa724
+djangoArgument xxx ctermfg=222 guifg=#f4cf86
+djangoTagBlock xxx ctermfg=214 guifg=#ffa724
+djangoVarBlock xxx ctermfg=214 guifg=#ffa724
+htmlTag        xxx ctermfg=95 ctermbg=233 guifg=#88633f guibg=bg
+htmlEndTag     xxx ctermfg=95 ctermbg=233 guifg=#88633f guibg=bg
+htmlTagName    xxx cterm=bold ctermfg=173 gui=bold guifg=#c7915b
+htmlSpecialTagName xxx cterm=bold ctermfg=173 gui=bold guifg=#c7915b
+htmlArg        xxx ctermfg=173 guifg=#c7915b
+htmlLink       xxx cterm=underline ctermfg=245 gui=underline guifg=#998f84
+javaClassDecl  xxx cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+javaScopeDecl  xxx cterm=bold ctermfg=196 gui=bold guifg=#ff2c4b
+javaCommentTitle xxx ctermfg=243 guifg=#857f78
+javaDocTags    xxx ctermfg=15 guifg=#ffffff
+javaDocParam   xxx ctermfg=221 guifg=#fade3e
+lessVariable   xxx ctermfg=154 guifg=#aeee00
+mailSubject    xxx cterm=bold ctermfg=214 gui=bold guifg=#ffa724
+mailHeader     xxx ctermfg=245 guifg=#998f84
+mailHeaderKey  xxx ctermfg=245 guifg=#998f84
+mailHeaderEmail xxx ctermfg=15 guifg=#ffffff
+mailURL        xxx cterm=underline ctermfg=137 gui=underline guifg=#b88853
+mailSignature  xxx ctermfg=243 guifg=#857f78
+mailQuoted1    xxx ctermfg=243 guifg=#857f78
+mailQuoted2    xxx ctermfg=211 guifg=#ff9eb8
+mailQuoted3    xxx ctermfg=222 guifg=#f4cf86
+mailQuoted4    xxx ctermfg=214 guifg=#ffa724
+mailQuoted5    xxx ctermfg=154 guifg=#aeee00
+markdownHeadingRule xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownHeadingDelimiter xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownOrderedListMarker xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownListMarker xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownItalic xxx cterm=bold ctermfg=15 gui=bold guifg=#ffffff
+markdownBold   xxx cterm=bold ctermfg=15 gui=bold guifg=#ffffff
+markdownH1     xxx cterm=bold ctermfg=214 gui=bold guifg=#ffa724
+markdownH2     xxx cterm=bold ctermfg=154 gui=bold guifg=#aeee00
+markdownH3     xxx ctermfg=154 guifg=#aeee00
+markdownH4     xxx ctermfg=154 guifg=#aeee00
+markdownH5     xxx ctermfg=154 guifg=#aeee00
+markdownH6     xxx ctermfg=154 guifg=#aeee00
+markdownLinkText xxx cterm=underline ctermfg=137 gui=underline guifg=#b88853
+markdownIdDeclaration xxx ctermfg=137 guifg=#b88853
+markdownAutomaticLink xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+markdownUrl    xxx cterm=bold ctermfg=137 gui=bold guifg=#b88853
+markdownUrldelimiter xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownLinkDelimiter xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownLinkTextDelimiter xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+markdownCodeDelimiter xxx cterm=bold ctermfg=222 gui=bold guifg=#f4cf86
+markdownCode   xxx ctermfg=222 guifg=#f4cf86
+markdownCodeBlock xxx ctermfg=222 guifg=#f4cf86
+pythonOperator xxx links to Operator
+pythonBuiltin  xxx ctermfg=211 guifg=#ff9eb8
+pythonBuiltinObj xxx ctermfg=211 guifg=#ff9eb8
+pythonBuiltinFunc xxx ctermfg=211 guifg=#ff9eb8
+pythonEscape   xxx ctermfg=211 guifg=#ff9eb8
+pythonException xxx cterm=bold ctermfg=154 gui=bold guifg=#aeee00
+pythonExceptions xxx ctermfg=154 guifg=#aeee00
+pythonPrecondit xxx ctermfg=154 guifg=#aeee00
+pythonDecorator xxx ctermfg=196 guifg=#ff2c4b
+hlLevel0       xxx ctermfg=243 guifg=#857f78
+hlLevel1       xxx ctermfg=214 guifg=#ffa724
+hlLevel2       xxx ctermfg=121 guifg=#8cffba
+hlLevel3       xxx ctermfg=211 guifg=#ff9eb8
+hlLevel4       xxx ctermfg=173 guifg=#c7915b
+hlLevel5       xxx ctermfg=222 guifg=#f4cf86
+hlLevel6       xxx ctermfg=214 guifg=#ffa724
+hlLevel7       xxx ctermfg=121 guifg=#8cffba
+hlLevel8       xxx ctermfg=211 guifg=#ff9eb8
+hlLevel9       xxx ctermfg=173 guifg=#c7915b
+VimCommentTitle xxx cterm=bold ctermfg=245 gui=bold guifg=#998f84
+VimMapMod      xxx ctermfg=211 guifg=#ff9eb8
+VimMapModKey   xxx ctermfg=211 guifg=#ff9eb8
+VimNotation    xxx ctermfg=211 guifg=#ff9eb8
+VimBracket     xxx ctermfg=211 guifg=#ff9eb8
+
+--- Variables ---
+
+session_autoload       yes
+CommandTMatchWindowReverse #1
+key                    {
+Grep_Default_Filelist  *
+session_restart_environment ['TERM', 'VIM', 'VIMRUNTIME']
+Grep_Xargs_Options     --null
+did_load_filetypes    #1
+loaded_AutoClose      #1
+session_directory      ~/.vim/sessions
+neocomplcache_enable_at_startup #1
+vundle_log            []
+loaded_getscriptPlugin  v33
+ctrlp_working_path_mode #1
+session_persist_globals []
+xolox_messages        []
+Grep_Skip_Files        *~ *,v s.*
+loaded_vimballPlugin   v33
+EasyGrepRecursive     #1
+bclose_multiple       #1
+locateopen_alwaysprompt #0
+Grep_Find_Use_Xargs   #1
+xolox_message_buffer  #100
+updated_bundles       []
+Grep_Xargs_Path        xargs
+did_install_syntax_menu #1
+Agrep_Path             agrep
+loaded_repeat         #1
+loaded_grep           #1
+surround_118           {{ ^M }}
+indent_guides_start_level #2
+indent_guides_guide_size #1
+colors_name            badwolf
+Grep_Shell_Escape_Char  \
+locateopen_ignorecase #0
+loaded_spellfile_plugin #1
+mapleader              ,
+close_func_arg         "}"
+session_command_aliases #0
+locateopen_smartcase  #1
+Grep_Find_Path         find
+Grep_Shell_Quote_Char  '
+surround_100           {% ^M %}
+surround_102           {% for ^M %}^@{% endfor %}
+Grep_OpenQuickfixWindow #1
+xolox#misc#os#version  0.1
+syntax_on             #1
+CommandTMaxFiles      #30000
+badwolf_html_link_underline #1
+Fgrep_Path             fgrep
+open_func_arg          "{"
+Grep_Null_Device       /dev/null
+more_save             #1
+bundles               [{'uri': 'https://github.com/gmarik/vundle.git', 'rtpath': '/Users/grillermo/.vim/bundle/vundle', 'name': 'vundle', 'name_spec': 'gmarik/vundle', 'path': function('1')}]
+xolox#session#version  1.5
+javascript_fold       #1
+repeat_tick           #-1
+bundle_dir             /Users/grillermo/.vim/bundle
+session_default_to_last #0
+Grep_Cygwin_Find      #0
+Grep_Skip_Dirs         RCS CVS SCCS
+session_autosave       yes
+loaded_2html_plugin    vim7.3_v10
+loaded_matchparen     #1
+tcommentMapLeader1     <c-?>
+did_install_default_menus #1
+ctags_command          ctags -R .
+Grep_Default_Options   
+Egrep_Path             egrep
+paste#paste_cmd       {'v': '"-c<Esc>:call paste#Paste()<CR>', 'i': 'x<BS><Esc>:call paste#Paste()<CR>gi', 'n': ':call paste#Paste()<CR>'}
+vundle_changelog      ['Updated Bundles:']
+CommandTMaxHeight     #20
+surround_114           {% trans '^M' %}
+surround_105           {% if ^M %}^@{% endif %}
+loaded_session        #1
+Grep_Path              grep
+loaded_bclose         #1
+surround_98            {% block ^M %}^@{% endblock %}
+ft_ignore_pat          \.\(Z\|gz\|bz2\|zip\|tgz\)$
+loaded_jsbeautify     #3
+surround_99            {% comment %}^M^@{% endcomment %}
+b:changedtick         #2
+v:version             #703
+v:beval_winnr         #0
+v:lnum                #0
+v:scrollstart          Unknown
+v:oldfiles            ['/Applications/MacVim.app/Contents/Resources/vim/vimrc', '/Applications/MacVim.app/Contents/Resources/vim/gvimrc', '~/.vim/bugreport.txt', '~/.gvimrc', '/private/etc/launchd.conf', '~/.profile', '~/c/bandtastic/django_project/templates/checkout.html', '~/c/bandtastic/django_project/member/models.py', '~/c/bandtastic/Procfile', '~/c/bandtastic/requirements.txt', '/Applications/MacVim.app/Contents/Resources/vim/gvimrc:', '~/bugreport.txt', '~/.vim/filetype.vim', '~/.vim/menu.vim', '~/.bash_profile', '~/.vim/GoToFile', '~/.vim/bundle/vim-unbundle/unbundle.vim', '~/c/bandtastic/django_project/manage.py', '~/.vim/autoload/lol.py', '~/c/bandtastic/django_project/sitemap.py', '~/c/bandtastic/django_project/middleware.py', '/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/gvimrc', '~/c/bandtastic/django_project/urls.py', '~/c/bandtastic/django_project/.bash_profile', '~/Dropbox/vim/.bashrc', '~/c/bandtesting/django_project/.bash_profile', '~/c/bandtesting/django_project/manage.py', '~/.vim/bundle/loremipsum/.VimballRecord', '~/.vimrc', '~/c/bandtesting/django_project/urls.py', '~/c/bandtesting/requirements.txt', '~/c/bandtesting/django_project/templates/events/antes.html', '~/c/bandtesting/django_project/templates/snippets/cover/fanfunders.html', '~/c/bandtesting/django_project/sitemaps.py', '~/c/bandtesting/django_project/sitemap.py', '~/c/bandtesting/django_project/templates/events/motorama.html', '~/c/bandtastic/django_project/templates/events/motorama.html']
+v:dying               #0
+v:windowid            #0
+v:lang                 C
+v:count               #0
+v:progname             Vim
+v:cmdbang             #0
+v:foldlevel           #0
+v:ctype                C
+v:prevcount           #0
+v:register             "
+v:mouse_win           #0
+v:count1              #1
+v:foldstart           #0
+v:foldend             #0
+v:profiling           #0
+v:beval_col           #0
+v:errmsg               E580: :endif without :if
+v:beval_lnum          #0
+v:mouse_lnum          #0
+v:beval_bufnr         #0
+v:shell_error         #0
+v:servername           VIM
+v:lc_time              C
+v:searchforward       #1
+v:mouse_col           #0
+v:statusmsg            No abbreviation found

@@ -1,0 +1,21 @@
+[submodule "SimpylFold"]
+	path = SimpylFold
+	url = ./bundle/SimpylFold/
+[submodule "command-t"]
+	path = command-t
+	url = ./bundle/command-t/
+[submodule "javascript_fold"]
+	path = javascript_fold
+	url = ./bundle/javascript_fold/
+[submodule "jedi-vim"]
+	path = jedi-vim
+	url = ./bundle/jedi-vim/
+[submodule "syntastic"]
+	path = syntastic
+	url = ./bundle/syntastic/
+[submodule "vim-space"]
+	path = vim-space
+	url = ./bundle/vim-space/
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
