@@ -1,18 +1,15 @@
+[submodule "AG"]
+	path = bundle/ag
+	url = https://github.com/rking/ag.vim.git
 [submodule "SimpylFold"]
-	path = SimpylFold
-	url = ./bundle/SimpylFold/
-[submodule "command-t"]
-	path = command-t
-	url = ./bundle/command-t/
-[submodule "javascript_fold"]
-	path = javascript_fold
-	url = ./bundle/javascript_fold/
+	path = bundle/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
 [submodule "jedi-vim"]
-	path = jedi-vim
-	url = ./bundle/jedi-vim/
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "syntastic"]
-	path = syntastic
-	url = ./bundle/syntastic/
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
