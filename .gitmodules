@@ -13,9 +13,6 @@
 [submodule "syntastic"]
 	path = syntastic
 	url = ./bundle/syntastic/
-[submodule "vim-space"]
-	path = vim-space
-	url = ./bundle/vim-space/
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
