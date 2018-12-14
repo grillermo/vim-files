@@ -103,3 +103,6 @@
 [submodule "bundle/vim-iterm-rspec"]
 	path = bundle/vim-iterm-rspec
 	url = https://github.com/skwp/vim-iterm-rspec.git
+[submodule "bundle/vim-lastplace"]
+	path = bundle/vim-lastplace
+	url = https://github.com/farmergreg/vim-lastplace.git
