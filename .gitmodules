@@ -130,3 +130,6 @@
 [submodule "bundle/QFEnter"]
 	path = bundle/QFEnter
 	url = https://github.com/yssl/QFEnter.git
+[submodule "bundle/neosnippet"]
+	path = bundle/neosnippet
+	url = https://github.com/Shougo/neosnippet.vim.git
