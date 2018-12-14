@@ -61,3 +61,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
