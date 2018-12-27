@@ -616,6 +616,10 @@ set re=1
 
 " Spelling mistakes
 iab alida aliada
+iab pry binding.pry
 
 " Color scheme
 color dracula
+
+" Ensure vim does not spit an error on some ymls with base64 stuff
+set maxmempattern=2000000
