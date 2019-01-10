@@ -25,9 +25,6 @@
 [submodule "bundle/neomru.vim"]
 	path = bundle/neomru.vim
 	url = https://github.com/Shougo/neomru.vim.git
-[submodule "bundle/neosnippet.vim"]
-	path = bundle/neosnippet.vim
-	url = https://github.com/Shougo/neosnippet.vim.git
 [submodule "bundle/quickfix-reflector.vim"]
 	path = bundle/quickfix-reflector.vim
 	url = https://github.com/stefandtw/quickfix-reflector.vim.git
@@ -43,9 +40,6 @@
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
 	url = https://github.com/kana/vim-textobj-user.git
-[submodule "bundle/vim-wakatime"]
-	path = bundle/vim-wakatime
-	url = git://github.com/wakatime/vim-wakatime.git
 [submodule "bundle/unite.vim"]
 	path = bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim.git
@@ -58,9 +52,6 @@
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/neocomplcache.vim"]
-	path = bundle/neocomplcache.vim
-	url = https://github.com/Shougo/neocomplcache.vim.git
 [submodule "bundle/nerdtree.git"]
 	path = bundle/nerdtree.git
 	url = https://github.com/scrooloose/nerdtree.git
@@ -121,3 +112,9 @@
 [submodule "bundle/vim-textobj-rubyblock"]
 	path = bundle/vim-textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "bundle/QFEnter"]
+	path = bundle/QFEnter
+	url = https://github.com/yssl/QFEnter.git
+[submodule "bundle/vim-wakatime"]
+	path = bundle/vim-wakatime
+	url = https://github.com/wakatime/vim-wakatime.git

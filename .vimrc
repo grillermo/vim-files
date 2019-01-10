@@ -2,16 +2,16 @@
 "
 
 " Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+" py << EOF
+" import os.path
+" import sys
+" import vim
+" if 'VIRTUAL_ENV' in os.environ:
+"     project_base_dir = os.environ['VIRTUAL_ENV']
+"     sys.path.insert(0, project_base_dir)
+"     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"     execfile(activate_this, dict(__file__=activate_this))
+" EOF
 """"""" DEFAULTS """"""""""
 " No wrap"
 set nowrap
@@ -147,25 +147,6 @@ let mapleader = ','
 
 """"""""""" PLUGINS """"""""""""
 "
-" NEOCOMPLCACHE  
-"
-let g:neocomplcache_enable_at_startup = 1 
-imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteC
-let g:neocomplcache_force_overwrite_completefunc = 1
-if !exists('g:neocomplcache_omni_functions')
-  let g:neocomplcache_omni_functions = {}
-endif
-if !exists('g:neocomplcache_force_omni_patterns')
-  let g:neocomplcache_force_omni_patterns = {}
-endif
-let g:neocomplcache_force_overwrite_completefunc = 1
-let g:neocomplcache_force_omni_patterns['python'] = '[^. \t]\.\w*'
-set ofu=syntaxcomplete#Complete
-au FileType python let b:did_ftplugin = 1
-let g:jedi#popup_on_dot = 0
 " multiple selection cursor
 " " Default mapping
 let g:multi_cursor_next_key='<D-n>'
@@ -191,10 +172,8 @@ set tags+=gems.tags,./tags,tags
 let g:ctrlp_working_path_mode = 0
 "
 " RSpec.vim 
-map <Leader>rf :w<CR>:call RunCurrentSpecFile()<CR>
-map <Leader>rc :w<CR>:call RunNearestSpec()<CR>
-map <Leader>rl :w<CR>:call RunLastSpec()<CR>
-map <Leader>ra :w<CR>:call RunAllSpecs()<CR>
+map <Leader>rf :w<CR>:RunItermSpringSpec<CR>
+map <Leader>rc :w<CR>:RunItermSpringSpecLine<CR>
 let g:rspec_runner = "os_x_iterm"
 " Toggle show hidden files for NERDTREE
 let NERDTreeShowHidden=1
@@ -485,14 +464,6 @@ nmap ,cl :let @*=expand("%:p")<CR>
 " I set this to prevent Vim autofolding when editing function/method signatures
 " set foldlevel=1
 "
-" Execute a selection of code (very cool!)
-" Use VISUAL to select a range and then hit ctrl-h to execute it.
-python << EOL
-# import vim
-def EvaluateCurrentRange():
-    eval(compile('\n'.join(vim.current.range),'','exec'),globals())
-EOL
-map <S-F5> :py EvaluateCurrentRange()<cr>
 
 if has("mac") || has("gui_macvim") || has("gui_mac")
   " relative path  (src/foo.txt)
@@ -645,3 +616,10 @@ set re=1
 
 " Spelling mistakes
 iab alida aliada
+iab pry binding.pry
+
+" Color scheme
+color dracula
+
+" Ensure vim does not spit an error on some ymls with base64 stuff
+set maxmempattern=2000000
