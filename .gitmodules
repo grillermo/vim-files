@@ -115,3 +115,6 @@
 [submodule "bundle/word_complete.vim"]
 	path = bundle/word_complete.vim
 	url = https://github.com/vim-scripts/word_complete.vim.git
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = //github.com/VundleVim/Vundle.vim.git

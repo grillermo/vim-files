@@ -1,6 +1,5 @@
 "Author: Guillermo Siliceo Trueba
 "
-
 " Add the virtualenv's site-packages to vim path
 " py << EOF
 " import os.path
@@ -16,7 +15,7 @@
 " No wrap"
 set nowrap
 "Vim not vi
-" set nocompatible "commented because xml.vim folding wont work with it
+set nocompatible "commented because xml.vim folding wont work with it
 " show line number
 set number
 "
@@ -146,6 +145,19 @@ let mapleader = ','
 
 
 """"""""""" PLUGINS """"""""""""
+
+"
+" VUNDLE
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+
 "
 " multiple selection cursor
 " " Default mapping
@@ -177,6 +189,8 @@ map <Leader>rc :w<CR>:RunItermSpringSpecLine<CR>
 let g:rspec_runner = "os_x_iterm"
 " Toggle show hidden files for NERDTREE
 let NERDTreeShowHidden=1
+" Fix lag while browsing
+let NERDTreeHighlightCursorline=0
 
 
  " HTML Tidy, http://tidy.sourceforge.net/
@@ -255,7 +269,7 @@ endif
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 "
-" bind \ (backward slash) to grep shortcut
+" bind \ (backward slash) to ag shortcut
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 "
 " When \ is pressed, Vim waits for our input:
