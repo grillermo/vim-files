@@ -102,7 +102,7 @@ call pathogen#helptags()
 
 " let &stl="%#search# %t %* %f %([%R%M]%)%{'!'[&ff=='".&ff."']}%{'$'[!&list]}%=#%n %l/%L,%c%V"
 "VIMInfo stuf
-set viminfo=!,%,'100,/5,:10,s500,n~/.viminfo
+set viminfo=!,%,'100,/5,:10,s500,n~/.vim/.viminfo
 " less verbose messages
 set shortmess=atIA
 " Scroll faster
@@ -133,7 +133,7 @@ set foldlevelstart=2
 
 " Persisten undo
 set undofile
-set undodir=/Users/grillermo/.vim/undodir
+set undodir=~/.vim/undodir
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=1000 "maximum number lines to save for undo on a buffer reload
 " Disable annoying ballons
