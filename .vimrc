@@ -273,7 +273,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 "
 " When \ is pressed, Vim waits for our input:
-nnoremap \ :Ag -Q<SPACE>
+nnoremap \ :Ag! -Q<SPACE>
 "
 " EASY align
 vmap <CR>a <Plug>(EasyAlign)
