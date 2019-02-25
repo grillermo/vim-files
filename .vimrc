@@ -276,7 +276,7 @@ command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag! -Q<SPACE>
 "
 " EASY align
-vmap <CR>a <Plug>(EasyAlign)
+vmap <leader><SPACE> <Plug>(EasyAlign)
 
 " UNITE
 nnoremap <leader>u :Unite<CR>
