@@ -118,10 +118,6 @@
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
     ignore = dirty
-[submodule "bundle/vim-nerdtree-syntax-highlight"]
-	path = bundle/vim-nerdtree-syntax-highlight
-	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
-    ignore = dirty
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
