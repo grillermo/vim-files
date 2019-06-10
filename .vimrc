@@ -154,6 +154,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ntk148v/vim-horizon'
+
+Plugin 'othree/yajs.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'jgdavey/vim-blockle'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'Shougo/neomru.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -287,7 +295,6 @@ nnoremap <leader>m :Unite file_mru <CR>
 nnoremap <leader>b :Unite buffer <CR> 
 nnoremap <leader>l :Unite line<CR> 
 nnoremap <leader>r :Unite register <CR> 
-nnoremap <leader>k :Unite grep <CR> 
 function! s:unite_settings()
 
     " Enable navigation with control-j and control-k in insert mode
@@ -348,7 +355,6 @@ function! s:unite_settings()
             \'normal, ra'],
         \]
 endfunction
-autocmd! FileType unite call s:unite_settings()
 " Custom mappings for the unite buffer
 autocmd! FileType unite call s:unite_settings()
 
@@ -358,12 +364,23 @@ let g:unite_winheight = 20
 " Match fuzzy finder ctrlp like'
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
+" Splitjoin
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+let g:splitjoin_ruby_hanging_args = 0
+let g:splitjoin_ruby_curly_braces = 0
+
+nmap <Leader>v :SplitjoinJoin<cr>
+nmap <Leader>V :SplitjoinSplit<cr>
+
 "
 "
 """""""""""" PERSONAL HOTKEYS """""""""""
 " 
 noremap <leader>fj :Autoformat<cr><cr>
 
+nmap <leader>qn :cnext<cr>
+nmap <leader>qp :cprevious<cr>
 
 " Do not force me to do "0p after overriding something with paste
 xnoremap p "_dP
@@ -470,15 +487,6 @@ nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 "
 "
-""""""""""""" Python Smart enhacements """""""""""" 
-" Smart indenting
-" set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-"
-"
-" I set this to prevent Vim autofolding when editing function/method signatures
-" set foldlevel=1
-"
-
 if has("mac") || has("gui_macvim") || has("gui_mac")
   " relative path  (src/foo.txt)
   nnoremap <leader>cf :let @*=expand("%")<CR>
@@ -633,7 +641,12 @@ iab alida aliada
 iab pry binding.pry
 
 " Color scheme
-color dracula
+color Papercolor
 
 " Ensure vim does not spit an error on some ymls with base64 stuff
 set maxmempattern=2000000
+
+" Create directory path when adding a new file if it does not exists
+if has("autocmd")
+  autocmd BufWritePre * :silent! call mkdir(expand('%:p:h'), 'p')
+end
