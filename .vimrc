@@ -151,12 +151,30 @@ let mapleader = ','
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'AndrewRadev/splitjoin.vim'
+
+Plugin 'Shougo/neomru.vim'
+
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
+
+" Split join
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+let g:splitjoin_ruby_curly_braces=0
+let g:splitjoin_quiet=1
+let g:splitjoin_ruby_hanging_args=0
+let g:splitjoin_ruby_options_as_arguments=1
+nmap <Leader>V :SplitjoinJoin<cr>
+nmap <Leader>v :SplitjoinSplit<cr>
+
 
 "
 " multiple selection cursor
@@ -273,7 +291,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 "
 " When \ is pressed, Vim waits for our input:
-nnoremap \ :Ag! -Q<SPACE>
+nnoremap \ :Ag -Q<SPACE>
 "
 " EASY align
 vmap <leader><SPACE> <Plug>(EasyAlign)
