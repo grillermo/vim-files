@@ -162,6 +162,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'jgdavey/vim-blockle'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Shougo/neomru.vim'
+Plugin 'lmeijvogel/vim-yaml-helper'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -213,8 +215,6 @@ set sessionoptions=blank,buffers,folds,resize,tabpages,winpos,winsize
 set ts=4 sw=4 et
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size = 1
-set shiftwidth=4
-set tabstop=4
 set softtabstop=4
 "
 "
@@ -370,15 +370,13 @@ let g:splitjoin_join_mapping = ''
 let g:splitjoin_ruby_hanging_args = 0
 let g:splitjoin_ruby_curly_braces = 0
 
-nmap <Leader>v :SplitjoinJoin<cr>
-nmap <Leader>V :SplitjoinSplit<cr>
+nmap <Leader>V :SplitjoinJoin<cr>
+nmap <Leader>v :SplitjoinSplit<cr>
 
 "
 "
 """""""""""" PERSONAL HOTKEYS """""""""""
 " 
-noremap <leader>fj :Autoformat<cr><cr>
-
 nmap <leader>qn :cnext<cr>
 nmap <leader>qp :cprevious<cr>
 
@@ -427,8 +425,6 @@ map <C-S-Tab> :bcrevious<cr>
 "Open buffer list and wait for input
 " Comment out shit
 "
-" Open module
-map <leader>o <LocalLeader>oo
 
 " Move text around with ctrl and hjkl
 nmap <C-l> >>
@@ -493,13 +489,11 @@ if has("mac") || has("gui_macvim") || has("gui_mac")
 
   " absolute path  (/something/src/foo.txt)
   nnoremap <leader>cF :let @*=expand("%:p")<CR>
-
-  " filename       (foo.txt)
-  nnoremap <leader>ct :let @*=expand("%:t")<CR>
-
-  " directory name (/something/src)
-  nnoremap <leader>ch :let @*=expand("%:p:h")<CR>
 endif
+
+
+"" Yank the current yaml line
+nnoremap <leader>cyl :YamlGetFullPath<CR>
 
 
 " to handle exiting insert mode via a control-C
