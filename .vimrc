@@ -152,25 +152,19 @@ let mapleader = ','
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ntk148v/vim-horizon'
-
-Plugin 'othree/yajs.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'jgdavey/vim-blockle'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Shougo/neomru.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jgdavey/vim-blockle'
 Plugin 'lmeijvogel/vim-yaml-helper'
 Plugin 'mustache/vim-mustache-handlebars'
-
-Plugin 'AndrewRadev/splitjoin.vim'
-
-Plugin 'Shougo/neomru.vim'
-
-Plugin 'airblade/vim-gitgutter'
+Plugin 'mxw/vim-jsx'
+Plugin 'ntk148v/vim-horizon'
+Plugin 'othree/yajs.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Quramy/vison'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -299,7 +293,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 "
 " When \ is pressed, Vim waits for our input:
-nnoremap \ :Ag -Q<SPACE>
+nnoremap \ :Ag! -Q<SPACE>
 "
 " EASY align
 vmap <leader><SPACE> <Plug>(EasyAlign)
@@ -439,9 +433,6 @@ vmap <S-Tab> <gv
 " Move between buffers using tabs
 map <C-Tab> :bnext<cr>
 map <C-S-Tab> :bcrevious<cr>
-"
-"Open buffer list and wait for input
-" Comment out shit
 "
 
 " Move text around with ctrl and hjkl
