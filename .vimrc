@@ -165,6 +165,7 @@ Plugin 'ntk148v/vim-horizon'
 Plugin 'othree/yajs.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Quramy/vison'
+Plugin 'prettier/vim-prettier'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
