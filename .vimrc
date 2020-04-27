@@ -489,6 +489,9 @@ map <leader>f4 :set foldlevel=4<CR>
 map <leader>f5 :set foldlevel=5<CR>
 
 
+" Do not jump immediatly with *
+nmap <silent> * "syiw<Esc>: let @/ = @s<CR>
+
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 "
