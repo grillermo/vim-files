@@ -166,6 +166,7 @@ Plugin 'othree/yajs.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Quramy/vison'
 Plugin 'prettier/vim-prettier'
+Plugin 'ruanyl/vim-fixmyjs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -291,13 +292,19 @@ endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 "
 " bind \ (backward slash) to ag shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 "
 " When \ is pressed, Vim waits for our input:
 nnoremap \ :Ag! -Q<SPACE>
 "
 " EASY align
 vmap <leader><SPACE> <Plug>(EasyAlign)
+"
+" Prettier
+vmap <leader>p :Prettier<CR>
+
+" Run ruby file
+nnoremap <leader>r :!ruby % <CR> 
 
 " UNITE
 nnoremap <leader>u :Unite<CR>
@@ -307,7 +314,6 @@ nnoremap <leader>h :Unite history/command <CR>
 nnoremap <leader>m :Unite file_mru <CR> 
 nnoremap <leader>b :Unite buffer <CR> 
 nnoremap <leader>l :Unite line<CR> 
-nnoremap <leader>r :Unite register <CR> 
 function! s:unite_settings()
 
     " Enable navigation with control-j and control-k in insert mode
