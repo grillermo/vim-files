@@ -440,9 +440,6 @@ nmap <C-X> Ydd
 
 " Close the window and delete the buffer associated with it
 map <D-w> :bd!<cr>
-" switch words
-:nnoremap <silent> gw "_yiw:s/\(\%#\w\+\)\(\W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
-:nnoremap <silent> gW "_yiw?\w\+\_W\+\%#<CR>:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>
 " Go to end of line, closer key
 inoremap <D-=> <esc>g$i
 imap <D--> <esc>g$i
