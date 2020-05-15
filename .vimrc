@@ -383,15 +383,6 @@ let g:unite_winheight = 20
 " Match fuzzy finder ctrlp like'
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
-" Splitjoin
-let g:splitjoin_split_mapping = ''
-let g:splitjoin_join_mapping = ''
-let g:splitjoin_ruby_hanging_args = 0
-let g:splitjoin_ruby_curly_braces = 0
-
-nmap <Leader>V :SplitjoinJoin<cr>
-nmap <Leader>v :SplitjoinSplit<cr>
-
 "
 "
 """""""""""" PERSONAL HOTKEYS """""""""""
