@@ -309,7 +309,6 @@ nnoremap <leader>r :!ruby % <CR>
 " UNITE
 nnoremap <leader>u :Unite<CR>
 nnoremap <leader>gt :Unite -silent -start-insert menu:git<CR>
-nnoremap <leader>s :Unite history/search <CR> 
 nnoremap <leader>h :Unite history/command <CR> 
 nnoremap <leader>m :Unite file_mru <CR> 
 nnoremap <leader>b :Unite buffer <CR> 
