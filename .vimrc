@@ -167,6 +167,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Quramy/vison'
 Plugin 'prettier/vim-prettier'
 Plugin 'ruanyl/vim-fixmyjs'
+Plugin 'AndrewRadev/switch.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -215,6 +216,14 @@ let g:rspec_runner = "os_x_iterm"
 let NERDTreeShowHidden=1
 " Fix lag while browsing
 let NERDTreeHighlightCursorline=0
+" Vim switch
+map <Leader>s :Switch<CR>
+let g:switch_custom_definitions =
+    \   [
+    \     {
+    \       '\<\(\k\+\): ':  '''\1'' => ',
+    \     }
+    \   ]
 
 
  " HTML Tidy, http://tidy.sourceforge.net/
