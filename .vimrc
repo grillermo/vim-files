@@ -399,7 +399,11 @@ nmap <leader>sw y:%s/<C-r>"/<C-e>
 nmap <Tab> <C-w>w
 nmap <s-Tab> <C-w>W
 "
+" Copy current ruby file including requires into clipboard
+function! CopyCurrentRubyFile()
+  !ruby /Users/grillermo/c/aliada/devops-scripts/utils/copy_to_clipboard.rb %
 endfunction
+nnoremap <leader>cr :call CopyCurrentRubyFile()<CR> <CR>
 
 "
 " enable paste toggling to fix the indentation issue when pasting text comming from outside vim, again only not GUI
