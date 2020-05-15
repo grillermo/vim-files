@@ -399,17 +399,7 @@ nmap <leader>sw y:%s/<C-r>"/<C-e>
 nmap <Tab> <C-w>w
 nmap <s-Tab> <C-w>W
 "
-" Toggle mouse usage, This is only relevante for the not terminal version of vim not the
-function! ToggleMouse()
-  if &mouse == 'a'
-    set mouse=
-    echo "Mouse usage disabled"
-  else
-    set mouse=a
-    echo "Mouse usage enabled"
-  endif
 endfunction
-map <F6> :call ToggleMouse()<CR>
 
 "
 " enable paste toggling to fix the indentation issue when pasting text comming from outside vim, again only not GUI
