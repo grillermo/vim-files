@@ -204,7 +204,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Shougo/neomru.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jgdavey/vim-blockle'
@@ -218,6 +217,7 @@ Plugin 'Quramy/vison'
 Plugin 'prettier/vim-prettier'
 Plugin 'ruanyl/vim-fixmyjs'
 Plugin 'AndrewRadev/switch.vim'
+Plugin 'neoclide/coc.nvim'
 " All of your Plugins must be added before the following line
 call vundle#end()
 "
@@ -296,7 +296,6 @@ autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
-
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   
@@ -349,7 +348,20 @@ let g:airline_section_b = ''
 let g:airline_section_y = ''
 let g:airline_section_x = ''
 let g:airline_section_z = ''
-
+"
+" Coc
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 
 " Defaults fixes and personal mappins
@@ -395,8 +407,6 @@ nmap <S-v> g^vg$h
 " Mapping shift tab to <s-tab>
 map <Esc>[Z <s-tab>
 ounmap <Esc>[Z
-" Now using it to get a deendenting effect
-imap <s-tab> <esc><<i
 "remap save
 map <D-s> :update!<cr>
 "remap copy
