@@ -59,6 +59,7 @@ set hidden
 " turn on command line completion wild style for pathx
 set wildmenu 
 "
+let mapleader = ','
 " Tab key
 "
 set ts=4 sw=4 et
