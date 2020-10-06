@@ -329,55 +329,6 @@ function! s:unite_settings()
     nnoremap <silent><buffer><expr> <C-s> unite#do_action('split')
     inoremap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
     nnoremap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
-    let g:unite_source_menu_menus = {}
-    let g:unite_source_menu_menus.git = {
-        \ 'description' : '            gestionar repositorios git
-            \                            ⌘ [espacio]g',
-        \}
-    let g:unite_source_menu_menus.git.command_candidates = [
-        \['▷ tig                                                        ⌘ ,gt',
-            \'normal ,gt'],
-        \['▷ git status       (Fugitive)                                ⌘ ,gs',
-            \'Gstatus'],
-        \['▷ git diff         (Fugitive)                                ⌘ ,gd',
-            \'Gdiff'],
-        \['▷ git commit       (Fugitive)                                ⌘ ,gc',
-            \'Gcommit'],
-        \['▷ git log          (Fugitive)                                ⌘ ,gl',
-            \'exe "silent Glog | Unite quickfix"'],
-        \['▷ git blame        (Fugitive)                                ⌘ ,gb',
-            \'Gblame'],
-        \['▷ git stage        (Fugitive)                                ⌘ ,gw',
-            \'Gwrite'],
-        \['▷ git checkout     (Fugitive)                                ⌘ ,go',
-            \'Gread'],
-        \['▷ git rm           (Fugitive)                                ⌘ ,gr',
-            \'Gremove'],
-        \['▷ git mv           (Fugitive)                                ⌘ ,gm',
-            \'exe "Gmove " input("destino: ")'],
-        \['▷ git push         (Fugitive, salida por buffer)             ⌘ ,gp',
-            \'Git! push'],
-        \['▷ git pull         (Fugitive, salida por buffer)             ⌘ ,gP',
-            \'Git! pull'],
-        \['▷ git prompt       (Fugitive, salida por buffer)             ⌘ ,gi',
-            \'exe "Git! " input("comando git: ")'],
-        \['▷ git cd           (Fugitive)',
-            \'Gcd'],
-        \]
-    let g:unite_source_menu_menus.rspec = {
-        \ 'description' : '            Run rspec stests
-            \                            ⌘ [espacio]g',
-        \}
-    let g:unite_source_menu_menus.rspec.command_candidates = [
-        \['▷ Run current file   (Rspec.vim)                                ⌘ ,rf',
-            \'normal ,rf'],
-        \['▷ Run nearesest spec (Rspec.vim)                                ⌘ ,rc',
-            \'normal ,rc'],
-        \['▷ Run last spec      (Rspec.vim)                                ⌘ ,rf',
-            \'normal, rl'],
-        \['▷ Run all specs      (Rspec.vim)                                ⌘ ,ra',
-            \'normal, ra'],
-        \]
 endfunction
 " Custom mappings for the unite buffer
 autocmd! FileType unite call s:unite_settings()
