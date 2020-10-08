@@ -245,6 +245,15 @@ let g:syntastic_python_checkers=['pyflakes']
 " CTRL P
 "
 let g:ctrlp_working_path_mode = 0
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  
+  " " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 "
 " RSpec.vim 
 "
@@ -293,22 +302,6 @@ let g:indent_guides_guide_size = 1
 "
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
-"
-" The Silver Searcher
-"
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  
-  " " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
-" bind \ (backward slash) to ag shortcut
-command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-" When \ is pressed, Vim waits for our input:
-nnoremap \ :Ag! -Q<SPACE>
 "
 " EASY align
 "
@@ -439,6 +432,8 @@ nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 " Run ruby file
 nnoremap <leader>r :!ruby % <CR> 
+" When \ is pressed, Vim waits for our input:
+nnoremap \ :Ag! -Q<SPACE>
 
 " Spelling mistakes
 "
