@@ -58,8 +58,8 @@ set ve=onemore
 set hidden 
 " turn on command line completion wild style for pathx
 set wildmenu 
-"
 let mapleader = ','
+"
 " Tab key
 "
 set ts=4 sw=4 et
@@ -258,6 +258,9 @@ let g:rspec_runner = "os_x_iterm"
 let NERDTreeShowHidden=1
 " Fix lag while browsing
 let NERDTreeHighlightCursorline=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
 "
 " Vim switch
 "
@@ -350,6 +353,7 @@ let g:airline_section_x = ''
 let g:airline_section_z = ''
 "
 " Coc
+"
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
@@ -362,6 +366,7 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+let g:coc_disable_startup_warning = 1
 
 
 " Defaults fixes and personal mappins
