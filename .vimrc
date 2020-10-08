@@ -314,10 +314,7 @@ vmap <leader>p :Prettier<CR>
 " UNITE
 "
 nnoremap <leader>u :Unite<CR>
-nnoremap <leader>gt :Unite -silent -start-insert menu:git<CR>
-nnoremap <leader>h :Unite history/command <CR> 
 nnoremap <leader>m :Unite file_mru <CR> 
-nnoremap <leader>b :Unite buffer <CR> 
 nnoremap <leader>l :Unite line<CR> 
 function! s:unite_settings()
     " Enable navigation with control-j and control-k in insert mode
