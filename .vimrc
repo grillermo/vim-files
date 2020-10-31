@@ -202,6 +202,7 @@ end
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'vim-scripts/L9'
 Plugin 'xolox/vim-misc'
 Plugin 'inkarkat/vim-ingo-library'
 Plugin 'junegunn/fzf.vim'
@@ -245,6 +246,14 @@ Plugin 'tpope/vim-surround'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'tmhedberg/matchit'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-commentary'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'farmergreg/vim-lastplace'
+Plugin 'lukaszb/vim-web-indent'
 " All of your Plugins must be added before the following line
 call vundle#end()
 "
