@@ -202,11 +202,12 @@ end
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+" Support libraries
 Plugin 'vim-scripts/L9'
 Plugin 'xolox/vim-misc'
 Plugin 'inkarkat/vim-ingo-library'
-Plugin 'junegunn/fzf.vim'
-Plugin 'kana/vim-textobj-user'
+" Self explanatory
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Shougo/neomru.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -231,7 +232,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'preservim/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'xuyuanp/git-nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'junegunn/vim-easy-align'
@@ -243,17 +244,18 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-repeat'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'tpope/vim-surround'
-Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'maksimr/vim-jsbeautify'
-Plugin 'wookiehangover/jshint.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-commentary'
-Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'lukaszb/vim-web-indent'
+" Additional objects
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'kana/vim-textobj-user'
 " All of your Plugins must be added before the following line
 call vundle#end()
 "
@@ -278,12 +280,10 @@ set tags+=gems.tags,./tags,tags
 let g:syntastic_javascript_checkers = ['eslint'] 
 let g:syntastic_python_checkers=['pyflakes']
 "
-" CTRL P
+" CTRL P + ag silver searcher
 "
 let g:ctrlp_working_path_mode = 0
 if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   
@@ -306,6 +306,9 @@ let NERDTreeHighlightCursorline=0
 let NERDTreeQuitOnOpen=0
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 "
 " Vim switch
 "
@@ -366,9 +369,9 @@ let g:unite_winheight = 20
 " Match fuzzy finder ctrlp like'
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "
-" Gundotool
+" Undo tree
 "
-map <leader>g :GundoToggle<cr>
+map <C-g> :UndotreeToggle<cr>
 "
 " Airline
 "
@@ -473,6 +476,11 @@ nmap ,cl :let @*=expand("%:p")<CR>
 nnoremap <leader>r :!ruby % <CR> 
 " When \ is pressed, Vim waits for our input:
 nnoremap \ :Ag! -Q<SPACE>
+" Insert mode move, useful in quickfix and searches 
+imap <C-l> <right>
+imap <C-k> <up>
+imap <C-j> <down>
+imap <C-h> <left>
 
 " Spelling mistakes
 "
