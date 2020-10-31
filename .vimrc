@@ -267,7 +267,7 @@ let g:rspec_runner = "os_x_iterm"
 let NERDTreeShowHidden=1
 " Fix lag while browsing
 let NERDTreeHighlightCursorline=0
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
 "
@@ -357,6 +357,12 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 let g:coc_disable_startup_warning = 1
+
+if has("mac") || has("gui_macvim") || has("gui_mac")
+  " relative path  (src/foo.txt)
+  nnoremap <leader>cy :YamlGetFullPath<CR>
+endif
+
 
 
 " Defaults fixes and personal mappins
